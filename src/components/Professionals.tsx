@@ -17,7 +17,7 @@ export const Professionals = () => {
       name: "Rayssa Andrade",
       role: "Fonoaudióloga",
       specialty: "Bacharel em Fonoaudiologia - UFS",
-      credentials: ["Mestranda UFS PPGCAS Core Power"],
+      credentials: ["Mestranda do Programa de Pós-Graduação em Ciências Aplicadas à Saúde da Universidade Federal de Sergipe"],
       avatar: "RA",
       photo: rayssaAndrade
     }
