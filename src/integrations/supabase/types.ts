@@ -14,7 +14,48 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      appointments: {
+        Row: {
+          appointment_date: string
+          appointment_time: string
+          child_name: string
+          created_at: string | null
+          google_event_id: string | null
+          id: string
+          parent_name: string
+          phone: string
+          professional: string
+          service: string
+          updated_at: string | null
+        }
+        Insert: {
+          appointment_date: string
+          appointment_time: string
+          child_name: string
+          created_at?: string | null
+          google_event_id?: string | null
+          id?: string
+          parent_name: string
+          phone: string
+          professional: string
+          service: string
+          updated_at?: string | null
+        }
+        Update: {
+          appointment_date?: string
+          appointment_time?: string
+          child_name?: string
+          created_at?: string | null
+          google_event_id?: string | null
+          id?: string
+          parent_name?: string
+          phone?: string
+          professional?: string
+          service?: string
+          updated_at?: string | null
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
