@@ -1,5 +1,6 @@
 import { Card } from "@/components/ui/card";
-import { MapPin, Phone, Mail, Clock } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { MapPin, Phone, Mail, Clock, MessageCircle } from "lucide-react";
 
 export const Contact = () => {
   return (
@@ -32,16 +33,23 @@ export const Contact = () => {
               </div>
             </Card>
 
-            <Card className="p-6 bg-card border-none shadow-soft">
+            <Card className="p-6 bg-gradient-to-br from-[#25D366]/10 to-[#25D366]/5 border-2 border-[#25D366]/30 shadow-lg">
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-xl bg-secondary/10 flex items-center justify-center flex-shrink-0">
-                  <Phone className="w-6 h-6 text-secondary" />
+                <div className="w-12 h-12 rounded-xl bg-[#25D366]/20 flex items-center justify-center flex-shrink-0">
+                  <MessageCircle className="w-6 h-6 text-[#25D366]" />
                 </div>
-                <div>
-                  <h3 className="font-semibold text-foreground mb-1">Telefone / WhatsApp</h3>
-                  <p className="text-muted-foreground text-sm">
+                <div className="flex-1">
+                  <h3 className="font-semibold text-foreground mb-2">WhatsApp</h3>
+                  <p className="text-muted-foreground text-sm mb-3">
                     (79) 93300-5359
                   </p>
+                  <Button 
+                    onClick={() => window.open('https://wa.me/557993305359?text=Olá! Gostaria de agendar uma consulta.', '_blank')}
+                    className="w-full bg-[#25D366] hover:bg-[#20BD5A] text-white"
+                  >
+                    <MessageCircle className="w-4 h-4 mr-2" />
+                    Falar no WhatsApp
+                  </Button>
                 </div>
               </div>
             </Card>
