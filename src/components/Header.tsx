@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Menu } from "lucide-react";
 import { useState } from "react";
-import logoTiaLidi from "@/assets/logo-tia-lidi.png";
+import logoNovo from "@/assets/logo-novo.png";
 
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -25,9 +25,9 @@ export const Header = () => {
           {/* Logo */}
           <a href="#" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
             <img 
-              src={logoTiaLidi} 
+              src={logoNovo} 
               alt="Centro Multidisciplinar Tia Lidi" 
-              className="h-14 w-auto"
+              className="h-12 w-auto bg-white p-2 rounded-lg"
             />
           </a>
 

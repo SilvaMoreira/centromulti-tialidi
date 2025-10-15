@@ -1,5 +1,5 @@
 import { Instagram, Facebook, Mail } from "lucide-react";
-import logoTiaLidi from "@/assets/logo-tia-lidi.png";
+import logoNovo from "@/assets/logo-novo.png";
 
 export const Footer = () => {
   return (
@@ -10,9 +10,9 @@ export const Footer = () => {
           <div>
             <div className="mb-4">
               <img 
-                src={logoTiaLidi} 
+                src={logoNovo} 
                 alt="Centro Tia Lidi" 
-                className="h-16 w-auto brightness-0 invert"
+                className="h-16 w-auto bg-white p-2 rounded-lg"
               />
             </div>
             <p className="text-background/80 text-sm leading-relaxed">
