@@ -63,9 +63,11 @@ export const Booking = () => {
             phone: formData.phone,
             childName: formData.childName || formData.parentName,
             service: services.find(s => s.id === formData.service)?.name || formData.service,
-            professional: Object.values(professionals)
-              .flat()
-              .find(p => p.id === formData.professional)?.name || formData.professional,
+            professional: formData.service === 'psicologia' 
+              ? 'Psicóloga Infantil'
+              : (Object.values(professionals)
+                  .flat()
+                  .find(p => p.id === formData.professional)?.name || formData.professional),
             appointmentDate: formData.date,
             appointmentTime: formData.time,
           }),
