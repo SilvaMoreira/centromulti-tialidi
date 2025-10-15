@@ -1,4 +1,4 @@
-import { Instagram, Facebook, Mail } from "lucide-react";
+import { Instagram, Mail } from "lucide-react";
 import logoNovo from "@/assets/logo-novo.png";
 
 export const Footer = () => {
@@ -58,20 +58,12 @@ export const Footer = () => {
             <h3 className="font-heading font-bold mb-4">Redes Sociais</h3>
             <div className="flex gap-4">
               <a 
-                href="https://instagram.com" 
+                href="https://www.instagram.com/centromulti_tialidi/" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-background/10 hover:bg-background/20 flex items-center justify-center transition-colors"
               >
                 <Instagram className="w-5 h-5" />
-              </a>
-              <a 
-                href="https://facebook.com" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full bg-background/10 hover:bg-background/20 flex items-center justify-center transition-colors"
-              >
-                <Facebook className="w-5 h-5" />
               </a>
               <a 
                 href="mailto:tialidipsicopedagoga@gmail.com"

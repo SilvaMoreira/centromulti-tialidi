@@ -87,14 +87,14 @@ export const Contact = () => {
           {/* Map */}
           <Card className="overflow-hidden border-none shadow-soft h-[500px]">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62745.13413568311!2d-37.08518682089844!3d-10.911775699999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x71ab3e4a381b925%3A0x2ebaed7a28ac41b5!2sAracaju%2C%20SE!5e0!3m2!1spt-BR!2sbr!4v1234567890123"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.6345789!2d-37.0647!3d-10.9289!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x71ab26b1cf0e0e1%3A0x1!2sR.%20Dep.%20Francisco%20Guedes%20Melo%2C%2085%20-%20Grageru%2C%20Aracaju%20-%20SE%2C%2049027-270!5e0!3m2!1spt-BR!2sbr!4v1234567890123"
               width="100%"
               height="100%"
               style={{ border: 0 }}
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="Localização Centro Tia Lidi"
+              title="Localização Centro Tia Lidi - R. Dep. Francisco Guedes Melo, 85 - Grageru, Aracaju - SE"
             ></iframe>
           </Card>
         </div>
