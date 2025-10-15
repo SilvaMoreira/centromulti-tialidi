@@ -5,10 +5,10 @@ import tiaLidiPhoto from "@/assets/tia-lidi-photo.png";
 export const Professionals = () => {
   const professionals = [
     {
-      name: "Maria Lidianne - Tia Lidi",
+      name: "Lidiane Santos - Tia Lidi",
       role: "Fundadora e Coordenadora",
       specialty: "Centro Multidisciplinar Tia Lidi",
-      credentials: ["Especialista em Dificuldades de Aprendizagem", "Mestrado em Educação"],
+      credentials: ["Especialista em Dificuldades de Aprendizagem"],
       avatar: "ML",
       photo: tiaLidiPhoto
     },
@@ -54,7 +54,7 @@ export const Professionals = () => {
                     <img 
                       src={professional.photo} 
                       alt={professional.name}
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-cover scale-150"
                     />
                   </div>
                 ) : (
@@ -80,14 +80,16 @@ export const Professionals = () => {
                 </div>
 
                 <div className="pt-4 border-t border-border space-y-2">
-                  <div className="flex items-center gap-2 text-xs text-muted-foreground">
-                    <GraduationCap className="w-4 h-4 text-primary" />
-                    <span>{professional.credentials[1]}</span>
-                  </div>
-                  <div className="flex items-center gap-2 text-xs text-muted-foreground">
-                    <Award className="w-4 h-4 text-primary" />
-                    <span>{professional.credentials[0]}</span>
-                  </div>
+                  {professional.credentials.map((credential, idx) => (
+                    <div key={idx} className="flex items-center gap-2 text-xs text-muted-foreground">
+                      {idx === 0 ? (
+                        <Award className="w-4 h-4 text-primary" />
+                      ) : (
+                        <GraduationCap className="w-4 h-4 text-primary" />
+                      )}
+                      <span>{credential}</span>
+                    </div>
+                  ))}
                 </div>
               </div>
             </Card>
