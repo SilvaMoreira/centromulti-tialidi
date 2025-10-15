@@ -13,13 +13,6 @@ export const Professionals = () => {
       photo: tiaLidiPhoto
     },
     {
-      name: "Dra. Ana Carolina Silva",
-      role: "Psicóloga Infantil",
-      specialty: "Especialista em TCC Infantil",
-      credentials: ["CRP 15/67890", "Especialização em Psicologia Infantil"],
-      avatar: "AS"
-    },
-    {
       name: "Dra. Fernanda Santos",
       role: "Fonoaudióloga",
       specialty: "Especialista em Linguagem e Fala",
@@ -40,7 +33,7 @@ export const Professionals = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {professionals.map((professional, index) => (
             <Card 
               key={index}
