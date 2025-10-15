@@ -6,9 +6,9 @@ export const Professionals = () => {
   const professionals = [
     {
       name: "Maria Lidianne - Tia Lidi",
-      role: "Psicopedagoga",
-      specialty: "Especialista em Dificuldades de Aprendizagem",
-      credentials: ["CRP 15/12345", "Mestrado em Educação"],
+      role: "Fundadora e Coordenadora",
+      specialty: "Centro Multidisciplinar Tia Lidi",
+      credentials: ["Especialista em Dificuldades de Aprendizagem", "Mestrado em Educação"],
       avatar: "ML",
       photo: tiaLidiPhoto
     },

@@ -26,7 +26,7 @@ export const Header = () => {
           <a href="#" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
             <img 
               src={logoTiaLidi} 
-              alt="Centro Tia Lidi - Psicopedagoga" 
+              alt="Centro Multidisciplinar Tia Lidi" 
               className="h-14 w-auto"
             />
           </a>
