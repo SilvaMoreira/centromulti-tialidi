@@ -109,7 +109,19 @@ serve(async (req) => {
       throw new Error('Google Calendar credentials not found');
     }
 
-    const credentials = JSON.parse(credentialsJson);
+    let credentials;
+    try {
+      credentials = JSON.parse(credentialsJson);
+    } catch (parseError) {
+      console.error('Failed to parse Google Calendar credentials:', parseError);
+      console.error('Credentials string preview:', credentialsJson.substring(0, 100));
+      throw new Error('Credenciais do Google Calendar estão em formato inválido. Por favor, reconfigure o secret com um JSON válido.');
+    }
+
+    // Validate required credential fields
+    if (!credentials.client_email || !credentials.private_key) {
+      throw new Error('Credenciais do Google Calendar incompletas. Verifique se possui client_email e private_key.');
+    }
 
     // Get OAuth2 access token
     const tokenResponse = await fetch('https://oauth2.googleapis.com/token', {
