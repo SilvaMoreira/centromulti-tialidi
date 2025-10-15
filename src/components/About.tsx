@@ -1,5 +1,6 @@
 import { Card } from "@/components/ui/card";
 import { Heart, Users, Award } from "lucide-react";
+import tiaLidiHistoria from "@/assets/tia-lidi-historia.png";
 
 export const About = () => {
   return (
@@ -65,8 +66,12 @@ export const About = () => {
                 criança receba o suporte necessário em seu desenvolvimento cognitivo, emocional e social.
               </p>
             </div>
-            <div className="w-full md:w-64 h-64 rounded-2xl bg-gradient-card shadow-lg flex items-center justify-center">
-              <Heart className="w-24 h-24 text-background/80" strokeWidth={1.5} />
+            <div className="w-full md:w-80 h-80 rounded-2xl overflow-hidden shadow-lg">
+              <img 
+                src={tiaLidiHistoria} 
+                alt="Lidiane Santos - Tia Lidi"
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
         </Card>
