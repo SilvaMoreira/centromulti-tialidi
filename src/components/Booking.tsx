@@ -157,7 +157,11 @@ export const Booking = () => {
                     <button
                       key={service.id}
                       type="button"
-                      onClick={() => setFormData({ ...formData, service: service.id, professional: "" })}
+                      onClick={() => setFormData({ 
+                        ...formData, 
+                        service: service.id, 
+                        professional: service.id === 'psicologia' ? 'psicologa-infantil' : '' 
+                      })}
                       className={`p-6 rounded-xl border-2 transition-smooth hover:scale-105 ${
                         formData.service === service.id
                           ? 'border-primary bg-primary/10'
@@ -188,21 +192,30 @@ export const Booking = () => {
                   Escolha o profissional
                 </h3>
                 <div className="space-y-3">
-                  {formData.service && professionals[formData.service as keyof typeof professionals]?.map((prof) => (
-                    <button
-                      key={prof.id}
-                      type="button"
-                      onClick={() => setFormData({ ...formData, professional: prof.id })}
-                      className={`w-full p-4 rounded-xl border-2 transition-smooth text-left flex items-center gap-4 ${
-                        formData.professional === prof.id
-                          ? 'border-primary bg-primary/10'
-                          : 'border-border bg-background hover:border-primary/50'
-                      }`}
-                    >
+                  {formData.service === 'psicologia' ? (
+                    <div className="w-full p-4 rounded-xl border-2 border-primary bg-primary/10 text-left flex items-center gap-4">
                       <User className="w-8 h-8 text-primary" />
-                      <span className="font-semibold text-foreground">{prof.name}</span>
-                    </button>
-                  ))}
+                      <span className="font-semibold text-foreground">Psicóloga Infantil</span>
+                    </div>
+                  ) : (
+                    <>
+                      {formData.service && professionals[formData.service as keyof typeof professionals]?.map((prof) => (
+                        <button
+                          key={prof.id}
+                          type="button"
+                          onClick={() => setFormData({ ...formData, professional: prof.id })}
+                          className={`w-full p-4 rounded-xl border-2 transition-smooth text-left flex items-center gap-4 ${
+                            formData.professional === prof.id
+                              ? 'border-primary bg-primary/10'
+                              : 'border-border bg-background hover:border-primary/50'
+                          }`}
+                        >
+                          <User className="w-8 h-8 text-primary" />
+                          <span className="font-semibold text-foreground">{prof.name}</span>
+                        </button>
+                      ))}
+                    </>
+                  )}
                 </div>
                 <div className="flex gap-4">
                   <Button 
