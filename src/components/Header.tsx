@@ -29,6 +29,9 @@ export const Header = () => {
               alt="Centro Multidisciplinar Tia Lidi" 
               className="h-12 w-auto bg-white p-2 rounded-lg"
             />
+            <span className="font-heading text-xl md:text-2xl font-semibold text-foreground">
+              Centro Multidisciplinar<br />Tia Lidi
+            </span>
           </a>
 
           {/* Desktop Navigation */}
