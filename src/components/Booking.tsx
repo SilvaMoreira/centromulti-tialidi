@@ -26,9 +26,9 @@ export const Booking = () => {
   ];
 
   const professionals = {
-    psicopedagogia: [{ id: "maria", name: "Dra. Maria Lidianne" }],
-    psicologia: [{ id: "ana", name: "Dra. Ana Carolina Silva" }],
-    fonoaudiologia: [{ id: "fernanda", name: "Dra. Fernanda Santos" }]
+    psicopedagogia: [{ id: "lidiane", name: "Lidiane Santos - Tia Lidi" }],
+    psicologia: [],
+    fonoaudiologia: [{ id: "rayssa", name: "Rayssa Andrade" }]
   };
 
   const availableTimes = ["09:00", "10:00", "11:00", "14:00", "15:00", "16:00", "17:00"];
