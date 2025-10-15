@@ -74,7 +74,7 @@ export const Footer = () => {
                 <Facebook className="w-5 h-5" />
               </a>
               <a 
-                href="mailto:contato@centrotialidi.com.br"
+                href="mailto:tialidipsicopedagoga@gmail.com"
                 className="w-10 h-10 rounded-full bg-background/10 hover:bg-background/20 flex items-center justify-center transition-colors"
               >
                 <Mail className="w-5 h-5" />
@@ -82,7 +82,7 @@ export const Footer = () => {
             </div>
             <p className="text-background/60 text-xs mt-6">
               (79) 93300-5359<br />
-              contato@centrotialidi.com.br
+              tialidipsicopedagoga@gmail.com
             </p>
           </div>
         </div>

@@ -54,7 +54,7 @@ export const Contact = () => {
                 <div>
                   <h3 className="font-semibold text-foreground mb-1">E-mail</h3>
                   <p className="text-muted-foreground text-sm">
-                    contato@centrotialidi.com.br
+                    tialidipsicopedagoga@gmail.com
                   </p>
                 </div>
               </div>
@@ -68,8 +68,8 @@ export const Contact = () => {
                 <div>
                   <h3 className="font-semibold text-foreground mb-1">Horário de atendimento</h3>
                   <p className="text-muted-foreground text-sm leading-relaxed">
-                    Segunda a Sexta: 8h às 18h<br />
-                    Sábado: 8h às 12h
+                    Segunda a Sexta: 7h às 18h<br />
+                    Sábado e Domingo: Fechado
                   </p>
                 </div>
               </div>
