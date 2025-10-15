@@ -1,7 +1,7 @@
 import { Card } from "@/components/ui/card";
 import { GraduationCap, Award } from "lucide-react";
 import tiaLidiPhoto from "@/assets/tia-lidi-photo.png";
-import rayssaAndrade from "@/assets/rayssa-andrade.jpeg";
+import rayssaAndrade from "@/assets/rayssa-andrade-new.jpeg";
 
 export const Professionals = () => {
   const professionals = [
