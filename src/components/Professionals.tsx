@@ -1,6 +1,7 @@
 import { Card } from "@/components/ui/card";
 import { GraduationCap, Award } from "lucide-react";
 import tiaLidiPhoto from "@/assets/tia-lidi-photo.png";
+import rayssaAndrade from "@/assets/rayssa-andrade.jpeg";
 
 export const Professionals = () => {
   const professionals = [
@@ -13,11 +14,12 @@ export const Professionals = () => {
       photo: tiaLidiPhoto
     },
     {
-      name: "Dra. Fernanda Santos",
+      name: "Rayssa Andrade",
       role: "Fonoaudióloga",
-      specialty: "Especialista em Linguagem e Fala",
-      credentials: ["CRFa 15/11223", "Mestrado em Fonoaudiologia"],
-      avatar: "FS"
+      specialty: "Bacharel em Fonoaudiologia - UFS",
+      credentials: ["Mestranda UFS PPGCAS Core Power"],
+      avatar: "RA",
+      photo: rayssaAndrade
     }
   ];
 
