@@ -1,10 +1,68 @@
 import { serve } from "https://deno.land/std@0.168.0/http/server.ts";
 import { createClient } from "https://esm.sh/@supabase/supabase-js@2.39.3";
+import { z } from "https://deno.land/x/zod@v3.22.4/mod.ts";
 
 const corsHeaders = {
   'Access-Control-Allow-Origin': '*',
   'Access-Control-Allow-Headers': 'authorization, x-client-info, apikey, content-type',
 };
+
+// Input validation schema
+const appointmentSchema = z.object({
+  parentName: z.string().trim().min(1, "Nome do responsável é obrigatório").max(100, "Nome muito longo"),
+  phone: z.string().trim().regex(/^\(?\d{2}\)?\s?\d{4,5}-?\d{4}$/, "Formato de telefone inválido. Use (XX) XXXXX-XXXX"),
+  childName: z.string().trim().max(100, "Nome muito longo").optional(),
+  service: z.string().min(1, "Serviço é obrigatório"),
+  professional: z.string().min(1, "Profissional é obrigatório"),
+  appointmentDate: z.string().regex(/^\d{4}-\d{2}-\d{2}$/, "Formato de data inválido"),
+  appointmentTime: z.string().regex(/^\d{2}:\d{2}$/, "Formato de hora inválido"),
+});
+
+// Simple in-memory rate limiting (5 requests per IP per hour)
+const rateLimitMap = new Map<string, { count: number; resetTime: number }>();
+
+function checkRateLimit(ip: string): boolean {
+  const now = Date.now();
+  const limit = rateLimitMap.get(ip);
+  
+  if (!limit || now > limit.resetTime) {
+    rateLimitMap.set(ip, { count: 1, resetTime: now + 3600000 }); // 1 hour
+    return true;
+  }
+  
+  if (limit.count >= 5) {
+    return false;
+  }
+  
+  limit.count++;
+  return true;
+}
+
+function sanitizeErrorMessage(error: unknown): string {
+  console.error('Detailed error:', error);
+  
+  if (error instanceof z.ZodError) {
+    return (error as z.ZodError).errors[0].message;
+  }
+  
+  if (error instanceof Error) {
+    const message = error.message.toLowerCase();
+    
+    if (message.includes('credential') || message.includes('auth')) {
+      return 'Serviço temporariamente indisponível. Tente novamente mais tarde.';
+    }
+    
+    if (message.includes('calendar') || message.includes('api')) {
+      return 'Erro ao criar evento no calendário. Tente novamente.';
+    }
+    
+    if (message.includes('database') || message.includes('supabase')) {
+      return 'Erro ao salvar agendamento. Tente novamente.';
+    }
+  }
+  
+  return 'Não foi possível criar o agendamento. Por favor, tente novamente.';
+}
 
 serve(async (req) => {
   if (req.method === 'OPTIONS') {
@@ -12,7 +70,31 @@ serve(async (req) => {
   }
 
   try {
-    const { parentName, phone, childName, service, professional, appointmentDate, appointmentTime } = await req.json();
+    // Get client IP for rate limiting
+    const clientIP = req.headers.get('x-forwarded-for')?.split(',')[0] || 'unknown';
+    
+    // Check rate limit
+    if (!checkRateLimit(clientIP)) {
+      console.warn(`Rate limit exceeded for IP: ${clientIP}`);
+      return new Response(
+        JSON.stringify({ 
+          error: 'Muitas tentativas. Por favor, aguarde alguns minutos antes de tentar novamente.' 
+        }),
+        { 
+          status: 429, 
+          headers: { ...corsHeaders, 'Content-Type': 'application/json' } 
+        }
+      );
+    }
+
+    // Parse and validate input
+    const rawData = await req.json();
+    
+    console.log('Received appointment request from IP:', clientIP);
+    
+    // Validate input using zod schema
+    const validatedData = appointmentSchema.parse(rawData);
+    const { parentName, phone, childName, service, professional, appointmentDate, appointmentTime } = validatedData;
 
     console.log('Creating appointment:', { parentName, service, professional, appointmentDate, appointmentTime });
 
@@ -125,11 +207,12 @@ serve(async (req) => {
     );
 
   } catch (error) {
-    console.error('Error:', error);
-    const errorMessage = error instanceof Error ? error.message : 'Unknown error';
+    const userMessage = sanitizeErrorMessage(error);
+    const statusCode = error instanceof z.ZodError ? 400 : 500;
+    
     return new Response(
-      JSON.stringify({ error: errorMessage }),
-      { status: 500, headers: { ...corsHeaders, 'Content-Type': 'application/json' } }
+      JSON.stringify({ error: userMessage }),
+      { status: statusCode, headers: { ...corsHeaders, 'Content-Type': 'application/json' } }
     );
   }
 });

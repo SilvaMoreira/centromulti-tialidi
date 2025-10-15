@@ -36,6 +36,19 @@ export const Booking = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     
+    // Validate phone format before submission
+    const phoneRegex = /^\(?\d{2}\)?\s?\d{4,5}-?\d{4}$/;
+    const cleanPhone = formData.phone.replace(/\D/g, '');
+    
+    if (!phoneRegex.test(formData.phone) || (cleanPhone.length !== 10 && cleanPhone.length !== 11)) {
+      toast({
+        title: "Telefone inválido",
+        description: "Digite um número válido no formato (00) 00000-0000",
+        variant: "destructive",
+      });
+      return;
+    }
+    
     try {
       const response = await fetch(
         `${import.meta.env.VITE_SUPABASE_URL}/functions/v1/create-calendar-event`,
@@ -308,15 +321,17 @@ export const Booking = () => {
                       <Phone className="w-4 h-4" />
                       WhatsApp *
                     </Label>
-                    <Input
-                      id="phone"
-                      required
-                      type="tel"
-                      value={formData.phone}
-                      onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                      placeholder="(00) 00000-0000"
-                      className="h-12"
-                    />
+                  <Input
+                    id="phone"
+                    required
+                    type="tel"
+                    value={formData.phone}
+                    onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+                    placeholder="(00) 00000-0000"
+                    pattern="\(?\d{2}\)?\s?\d{4,5}-?\d{4}"
+                    title="Digite um telefone válido: (00) 00000-0000"
+                    className="h-12"
+                  />
                   </div>
 
                   <div>
