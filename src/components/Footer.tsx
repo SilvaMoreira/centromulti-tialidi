@@ -1,4 +1,5 @@
-import { Heart, Instagram, Facebook, Mail } from "lucide-react";
+import { Instagram, Facebook, Mail } from "lucide-react";
+import logoTiaLidi from "@/assets/logo-tia-lidi.png";
 
 export const Footer = () => {
   return (
@@ -7,9 +8,12 @@ export const Footer = () => {
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           {/* Brand */}
           <div>
-            <div className="flex items-center gap-2 mb-4">
-              <Heart className="w-6 h-6 fill-primary text-primary" />
-              <span className="font-heading text-xl font-bold">Centro Tia Lidi</span>
+            <div className="mb-4">
+              <img 
+                src={logoTiaLidi} 
+                alt="Centro Tia Lidi" 
+                className="h-16 w-auto brightness-0 invert"
+              />
             </div>
             <p className="text-background/80 text-sm leading-relaxed">
               Atendimento multidisciplinar infantil com amor e propósito. 
@@ -88,7 +92,7 @@ export const Footer = () => {
             © {new Date().getFullYear()} Centro Multidisciplinar Tia Lidi. Todos os direitos reservados.
           </p>
           <p className="flex items-center gap-1">
-            Feito com <Heart className="w-4 h-4 fill-primary text-primary inline" /> pela 
+            Feito com 💛 pela 
             <a 
               href="https://nivratech.com" 
               target="_blank" 
