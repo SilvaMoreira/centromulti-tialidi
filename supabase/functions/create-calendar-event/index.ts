@@ -165,8 +165,12 @@ serve(async (req) => {
       },
     };
 
+    // Use target calendar ID if provided, otherwise default to primary
+    const calendarId = Deno.env.get('CALENDAR_ID') || 'primary';
+    console.log('Using calendarId:', calendarId);
+
     const calendarResponse = await fetch(
-      `https://www.googleapis.com/calendar/v3/calendars/primary/events`,
+      `https://www.googleapis.com/calendar/v3/calendars/${encodeURIComponent(calendarId)}/events`,
       {
         method: 'POST',
         headers: {
