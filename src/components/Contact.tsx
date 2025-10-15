@@ -25,8 +25,8 @@ export const Contact = () => {
                 <div>
                   <h3 className="font-semibold text-foreground mb-1">Endereço</h3>
                   <p className="text-muted-foreground text-sm leading-relaxed">
-                    Rua Exemplo, 123 - Bairro Centro<br />
-                    Aracaju - SE, 49000-000
+                    R. Dep. Francisco Guedes Melo, 85 - Grageru<br />
+                    Aracaju - SE, 49027-270
                   </p>
                 </div>
               </div>
@@ -40,7 +40,7 @@ export const Contact = () => {
                 <div>
                   <h3 className="font-semibold text-foreground mb-1">Telefone / WhatsApp</h3>
                   <p className="text-muted-foreground text-sm">
-                    (79) 99999-9999
+                    (79) 93300-5359
                   </p>
                 </div>
               </div>

@@ -1,14 +1,16 @@
 import { Card } from "@/components/ui/card";
 import { GraduationCap, Award } from "lucide-react";
+import tiaLidiPhoto from "@/assets/tia-lidi-photo.png";
 
 export const Professionals = () => {
   const professionals = [
     {
-      name: "Dra. Maria Lidianne",
+      name: "Maria Lidianne - Tia Lidi",
       role: "Psicopedagoga",
       specialty: "Especialista em Dificuldades de Aprendizagem",
       credentials: ["CRP 15/12345", "Mestrado em Educação"],
-      avatar: "ML"
+      avatar: "ML",
+      photo: tiaLidiPhoto
     },
     {
       name: "Dra. Ana Carolina Silva",
@@ -47,11 +49,21 @@ export const Professionals = () => {
             >
               <div className="relative h-48 gradient-card flex items-center justify-center overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-accent/20 to-secondary/20"></div>
-                <div className="relative w-32 h-32 rounded-full bg-background/90 flex items-center justify-center shadow-lg group-hover:scale-110 transition-smooth">
-                  <span className="font-heading text-4xl font-bold text-primary">
-                    {professional.avatar}
-                  </span>
-                </div>
+                {professional.photo ? (
+                  <div className="relative w-32 h-32 rounded-full overflow-hidden shadow-lg group-hover:scale-110 transition-smooth">
+                    <img 
+                      src={professional.photo} 
+                      alt={professional.name}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                ) : (
+                  <div className="relative w-32 h-32 rounded-full bg-background/90 flex items-center justify-center shadow-lg group-hover:scale-110 transition-smooth">
+                    <span className="font-heading text-4xl font-bold text-primary">
+                      {professional.avatar}
+                    </span>
+                  </div>
+                )}
               </div>
 
               <div className="p-6 space-y-4">

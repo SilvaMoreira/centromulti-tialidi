@@ -81,7 +81,7 @@ export const Footer = () => {
               </a>
             </div>
             <p className="text-background/60 text-xs mt-6">
-              (79) 99999-9999<br />
+              (79) 93300-5359<br />
               contato@centrotialidi.com.br
             </p>
           </div>
