@@ -33,26 +33,62 @@ export const Booking = () => {
 
   const availableTimes = ["09:00", "10:00", "11:00", "14:00", "15:00", "16:00", "17:00"];
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     
-    // Simulate booking confirmation
-    toast({
-      title: "Agendamento confirmado! 💛",
-      description: "Te enviamos os detalhes no WhatsApp.",
-    });
+    try {
+      const response = await fetch(
+        `${import.meta.env.VITE_SUPABASE_URL}/functions/v1/create-calendar-event`,
+        {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Authorization': `Bearer ${import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY}`,
+          },
+          body: JSON.stringify({
+            parentName: formData.parentName,
+            phone: formData.phone,
+            childName: formData.childName || formData.parentName,
+            service: services.find(s => s.id === formData.service)?.name || formData.service,
+            professional: Object.values(professionals)
+              .flat()
+              .find(p => p.id === formData.professional)?.name || formData.professional,
+            appointmentDate: formData.date,
+            appointmentTime: formData.time,
+          }),
+        }
+      );
 
-    // Reset form
-    setFormData({
-      service: "",
-      professional: "",
-      date: "",
-      time: "",
-      parentName: "",
-      phone: "",
-      childName: ""
-    });
-    setStep(1);
+      if (!response.ok) {
+        throw new Error('Erro ao criar agendamento');
+      }
+
+      await response.json();
+
+      toast({
+        title: "Agendamento confirmado! 💛",
+        description: "Te enviamos os detalhes no WhatsApp.",
+      });
+
+      // Reset form
+      setFormData({
+        service: "",
+        professional: "",
+        date: "",
+        time: "",
+        parentName: "",
+        phone: "",
+        childName: ""
+      });
+      setStep(1);
+    } catch (error) {
+      console.error('Error creating appointment:', error);
+      toast({
+        title: "Erro ao agendar",
+        description: "Não foi possível criar o agendamento. Tente novamente.",
+        variant: "destructive",
+      });
+    }
   };
 
   const canProceed = (currentStep: number) => {
