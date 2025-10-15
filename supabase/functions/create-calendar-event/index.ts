@@ -49,6 +49,20 @@ serve(async (req) => {
 
     const { access_token } = await tokenResponse.json();
 
+    // Check if slot is already taken
+    const { data: existingAppointment } = await supabase
+      .from('appointments')
+      .select('id')
+      .eq('professional', professional)
+      .eq('appointment_date', appointmentDate)
+      .eq('appointment_time', appointmentTime)
+      .maybeSingle();
+
+    if (existingAppointment) {
+      console.log('Slot already taken:', { professional, appointmentDate, appointmentTime });
+      throw new Error('Este horário já está ocupado para este profissional');
+    }
+
     // Parse date and time
     const [hours, minutes] = appointmentTime.split(':');
     const startDateTime = new Date(appointmentDate);
