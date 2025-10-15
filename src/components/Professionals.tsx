@@ -49,7 +49,7 @@ export const Professionals = () => {
                     <img 
                       src={professional.photo} 
                       alt={professional.name}
-                      className={`w-full h-full object-cover ${professional.name.includes('Tia Lidi') ? 'scale-150' : 'scale-90 object-top'}`}
+                      className={`w-full h-full ${professional.name.includes('Tia Lidi') ? 'object-cover scale-150' : 'object-cover scale-110'}`}
                     />
                   </div>
                 ) : (
