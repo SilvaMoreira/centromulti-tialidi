@@ -23,12 +23,21 @@ export const Contact = () => {
                 <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
                   <MapPin className="w-6 h-6 text-primary" />
                 </div>
-                <div>
-                  <h3 className="font-semibold text-foreground mb-1">Endereço</h3>
-                  <p className="text-muted-foreground text-sm leading-relaxed">
+                <div className="flex-1">
+                  <h3 className="font-semibold text-foreground mb-2">Endereço</h3>
+                  <address className="text-muted-foreground text-sm leading-relaxed not-italic mb-3">
                     R. Dep. Francisco Guedes Melo, 85 - Grageru<br />
                     Aracaju - SE, 49027-270
-                  </p>
+                  </address>
+                  <Button 
+                    onClick={() => window.open('https://maps.app.goo.gl/IBKwgmGpmoV2wBn5F', '_blank')}
+                    variant="outline"
+                    size="sm"
+                    className="w-full"
+                  >
+                    <MapPin className="w-4 h-4 mr-2" />
+                    Ver no Google Maps
+                  </Button>
                 </div>
               </div>
             </Card>
@@ -44,7 +53,7 @@ export const Contact = () => {
                     (79) 93300-5359
                   </p>
                   <Button 
-                    onClick={() => window.open('https://wa.me/557993305359?text=Olá! Gostaria de agendar uma consulta.', '_blank')}
+                    onClick={() => window.open('https://wa.me/5579933005359?text=Olá! Gostaria de agendar uma consulta.', '_blank')}
                     className="w-full bg-[#25D366] hover:bg-[#20BD5A] text-white"
                   >
                     <MessageCircle className="w-4 h-4 mr-2" />
