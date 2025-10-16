@@ -30,7 +30,7 @@ export const Contact = () => {
                     Aracaju - SE, 49027-270
                   </address>
                   <Button 
-                    onClick={() => window.open('https://maps.app.goo.gl/IBKwgmGpmoV2wBn5F', '_blank')}
+                    onClick={() => window.open('https://goo.gl/maps/IBKwgmGpmoV2wBn5F', '_blank')}
                     variant="outline"
                     size="sm"
                     className="w-full"
