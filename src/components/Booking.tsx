@@ -11,7 +11,6 @@ export const Booking = () => {
   const [step, setStep] = useState(1);
   const [formData, setFormData] = useState({
     service: "",
-    professional: "",
     date: "",
     time: "",
     parentName: "",
@@ -20,16 +19,10 @@ export const Booking = () => {
   });
 
   const services = [
-    { id: "psicopedagogia", name: "Psicopedagogia", icon: "📚" },
-    { id: "psicologia", name: "Psicologia Infantil", icon: "🧠" },
-    { id: "fonoaudiologia", name: "Fonoaudiologia", icon: "💬" }
+    { id: "visita-guiada", name: "Visita Guiada", icon: "🏡", description: "Conheça nossa estrutura e equipe" },
+    { id: "orientacao-inicial", name: "Orientação Inicial", icon: "💬", description: "Conversa sobre as necessidades da criança" },
+    { id: "avaliacao-gratuita", name: "Avaliação Gratuita", icon: "📋", description: "Avaliação sem compromisso" }
   ];
-
-  const professionals = {
-    psicopedagogia: [{ id: "lidiane", name: "Lidiane Santos - Tia Lidi" }],
-    psicologia: [],
-    fonoaudiologia: [{ id: "rayssa", name: "Rayssa Andrade" }]
-  };
 
   const availableTimes = ["09:00", "10:00", "11:00", "14:00", "15:00", "16:00", "17:00"];
 
@@ -63,11 +56,7 @@ export const Booking = () => {
             phone: formData.phone,
             childName: formData.childName || formData.parentName,
             service: services.find(s => s.id === formData.service)?.name || formData.service,
-            professional: formData.service === 'psicologia' 
-              ? 'Psicóloga Infantil'
-              : (Object.values(professionals)
-                  .flat()
-                  .find(p => p.id === formData.professional)?.name || formData.professional),
+            professional: 'Equipe Centro Tia Lidi',
             appointmentDate: formData.date,
             appointmentTime: formData.time,
           }),
@@ -88,7 +77,6 @@ export const Booking = () => {
       // Reset form
       setFormData({
         service: "",
-        professional: "",
         date: "",
         time: "",
         parentName: "",
@@ -108,8 +96,7 @@ export const Booking = () => {
 
   const canProceed = (currentStep: number) => {
     if (currentStep === 1) return formData.service !== "";
-    if (currentStep === 2) return formData.professional !== "";
-    if (currentStep === 3) return formData.date !== "" && formData.time !== "";
+    if (currentStep === 2) return formData.date !== "" && formData.time !== "";
     return false;
   };
 
@@ -118,17 +105,17 @@ export const Booking = () => {
       <div className="container mx-auto max-w-4xl">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="font-heading text-3xl md:text-5xl font-bold mb-4 text-foreground">
-            Agende sua consulta
+            Venha nos conhecer! 💛
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Processo rápido e simples. Escolha o serviço, profissional e horário que melhor se encaixam na sua rotina.
+            Agende uma visita sem compromisso. Conheça nossa equipe, estrutura e descubra como podemos ajudar no desenvolvimento do seu filho.
           </p>
         </div>
 
         <Card className="p-8 md:p-12 shadow-lg border-none bg-card">
           {/* Progress indicator */}
           <div className="flex justify-between mb-12">
-            {[1, 2, 3, 4].map((s) => (
+            {[1, 2, 3].map((s) => (
               <div key={s} className="flex flex-col items-center flex-1">
                 <div className={`w-10 h-10 rounded-full flex items-center justify-center font-semibold transition-smooth ${
                   step >= s ? 'bg-primary text-primary-foreground' : 'bg-muted text-muted-foreground'
@@ -136,21 +123,20 @@ export const Booking = () => {
                   {s}
                 </div>
                 <div className="text-xs mt-2 text-muted-foreground hidden sm:block">
-                  {s === 1 && "Serviço"}
-                  {s === 2 && "Profissional"}
-                  {s === 3 && "Data/Hora"}
-                  {s === 4 && "Dados"}
+                  {s === 1 && "Tipo de Visita"}
+                  {s === 2 && "Data/Hora"}
+                  {s === 3 && "Seus Dados"}
                 </div>
               </div>
             ))}
           </div>
 
           <form onSubmit={handleSubmit} className="space-y-8">
-            {/* Step 1: Service Selection */}
+            {/* Step 1: Visit Type Selection */}
             {step === 1 && (
               <div className="space-y-6 animate-fade-in">
                 <h3 className="font-heading text-2xl font-bold mb-6 text-foreground">
-                  Escolha o serviço
+                  Como gostaria de nos conhecer?
                 </h3>
                 <div className="grid md:grid-cols-3 gap-4">
                   {services.map((service) => (
@@ -159,17 +145,17 @@ export const Booking = () => {
                       type="button"
                       onClick={() => setFormData({ 
                         ...formData, 
-                        service: service.id, 
-                        professional: service.id === 'psicologia' ? 'psicologa-infantil' : '' 
+                        service: service.id
                       })}
-                      className={`p-6 rounded-xl border-2 transition-smooth hover:scale-105 ${
+                      className={`p-6 rounded-xl border-2 transition-smooth hover:scale-105 text-left ${
                         formData.service === service.id
                           ? 'border-primary bg-primary/10'
                           : 'border-border bg-background hover:border-primary/50'
                       }`}
                     >
                       <div className="text-4xl mb-3">{service.icon}</div>
-                      <div className="font-semibold text-foreground">{service.name}</div>
+                      <div className="font-semibold text-foreground mb-2">{service.name}</div>
+                      <div className="text-sm text-muted-foreground">{service.description}</div>
                     </button>
                   ))}
                 </div>
@@ -185,61 +171,8 @@ export const Booking = () => {
               </div>
             )}
 
-            {/* Step 2: Professional Selection */}
+            {/* Step 2: Date and Time */}
             {step === 2 && (
-              <div className="space-y-6 animate-fade-in">
-                <h3 className="font-heading text-2xl font-bold mb-6 text-foreground">
-                  Escolha o profissional
-                </h3>
-                <div className="space-y-3">
-                  {formData.service === 'psicologia' ? (
-                    <div className="w-full p-4 rounded-xl border-2 border-primary bg-primary/10 text-left flex items-center gap-4">
-                      <User className="w-8 h-8 text-primary" />
-                      <span className="font-semibold text-foreground">Psicóloga Infantil</span>
-                    </div>
-                  ) : (
-                    <>
-                      {formData.service && professionals[formData.service as keyof typeof professionals]?.map((prof) => (
-                        <button
-                          key={prof.id}
-                          type="button"
-                          onClick={() => setFormData({ ...formData, professional: prof.id })}
-                          className={`w-full p-4 rounded-xl border-2 transition-smooth text-left flex items-center gap-4 ${
-                            formData.professional === prof.id
-                              ? 'border-primary bg-primary/10'
-                              : 'border-border bg-background hover:border-primary/50'
-                          }`}
-                        >
-                          <User className="w-8 h-8 text-primary" />
-                          <span className="font-semibold text-foreground">{prof.name}</span>
-                        </button>
-                      ))}
-                    </>
-                  )}
-                </div>
-                <div className="flex gap-4">
-                  <Button 
-                    type="button"
-                    variant="outline"
-                    onClick={() => setStep(1)}
-                    className="flex-1"
-                  >
-                    Voltar
-                  </Button>
-                  <Button 
-                    type="button"
-                    onClick={() => setStep(3)}
-                    disabled={!canProceed(2)}
-                    className="flex-1"
-                  >
-                    Continuar
-                  </Button>
-                </div>
-              </div>
-            )}
-
-            {/* Step 3: Date and Time */}
-            {step === 3 && (
               <div className="space-y-6 animate-fade-in">
                 <h3 className="font-heading text-2xl font-bold mb-6 text-foreground">
                   Escolha data e horário
@@ -291,15 +224,15 @@ export const Booking = () => {
                   <Button 
                     type="button"
                     variant="outline"
-                    onClick={() => setStep(2)}
+                    onClick={() => setStep(1)}
                     className="flex-1"
                   >
                     Voltar
                   </Button>
                   <Button 
                     type="button"
-                    onClick={() => setStep(4)}
-                    disabled={!canProceed(3)}
+                    onClick={() => setStep(3)}
+                    disabled={!canProceed(2)}
                     className="flex-1"
                   >
                     Continuar
@@ -308,8 +241,8 @@ export const Booking = () => {
               </div>
             )}
 
-            {/* Step 4: Contact Information */}
-            {step === 4 && (
+            {/* Step 3: Contact Information */}
+            {step === 3 && (
               <div className="space-y-6 animate-fade-in">
                 <h3 className="font-heading text-2xl font-bold mb-6 text-foreground">
                   Seus dados
@@ -374,7 +307,7 @@ export const Booking = () => {
                   <Button 
                     type="button"
                     variant="outline"
-                    onClick={() => setStep(3)}
+                    onClick={() => setStep(2)}
                     className="flex-1"
                   >
                     Voltar
@@ -385,7 +318,7 @@ export const Booking = () => {
                     className="flex-1"
                   >
                     <CheckCircle className="w-5 h-5" />
-                    Confirmar agendamento
+                    Confirmar visita
                   </Button>
                 </div>
               </div>
