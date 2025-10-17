@@ -58,7 +58,7 @@ export const Professionals = () => {
                     <img 
                       src={professional.photo} 
                       alt={professional.name}
-                      className={`w-full h-full ${professional.name.includes('Tia Lidi') ? 'object-cover scale-150' : 'object-cover scale-110'}`}
+                      className="w-full h-full object-cover"
                     />
                   </div>
                 ) : (
