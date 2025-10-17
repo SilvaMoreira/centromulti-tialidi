@@ -2,6 +2,7 @@ import { Card } from "@/components/ui/card";
 import { GraduationCap, Award } from "lucide-react";
 import tiaLidiPhoto from "@/assets/tia-lidi-photo.png";
 import rayssaAndrade from "@/assets/rayssa-andrade-new.jpeg";
+import rebecaOliveira from "@/assets/rebeca-oliveira.png";
 
 export const Professionals = () => {
   const professionals = [
@@ -20,6 +21,14 @@ export const Professionals = () => {
       credentials: ["Mestranda do Programa de Pós-Graduação em Ciências Aplicadas à Saúde da Universidade Federal de Sergipe"],
       avatar: "RA",
       photo: rayssaAndrade
+    },
+    {
+      name: "Rebeca Oliveira",
+      role: "Psicóloga",
+      specialty: "CRP 19/005291",
+      credentials: ["Acredita na importância de uma escuta acolhedora e leve para cada criança e sua família"],
+      avatar: "RO",
+      photo: rebecaOliveira
     }
   ];
 
@@ -35,7 +44,7 @@ export const Professionals = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {professionals.map((professional, index) => (
             <Card 
               key={index}

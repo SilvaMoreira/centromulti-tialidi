@@ -26,13 +26,13 @@ export const Booking = () => {
 
   const availableTimes = ["09:00", "10:00", "11:00", "14:00", "15:00", "16:00", "17:00"];
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     // Validate phone format before submission
     const phoneRegex = /^\(?\d{2}\)?\s?\d{4,5}-?\d{4}$/;
     const cleanPhone = formData.phone.replace(/\D/g, '');
-    
+
     if (!phoneRegex.test(formData.phone) || (cleanPhone.length !== 10 && cleanPhone.length !== 11)) {
       toast({
         title: "Telefone inválido",
@@ -41,57 +41,39 @@ export const Booking = () => {
       });
       return;
     }
-    
-    try {
-      const response = await fetch(
-        `${import.meta.env.VITE_SUPABASE_URL}/functions/v1/create-calendar-event`,
-        {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-            'Authorization': `Bearer ${import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY}`,
-          },
-          body: JSON.stringify({
-            parentName: formData.parentName,
-            phone: formData.phone,
-            childName: formData.childName || formData.parentName,
-            service: services.find(s => s.id === formData.service)?.name || formData.service,
-            professional: 'Equipe Centro Tia Lidi',
-            appointmentDate: formData.date,
-            appointmentTime: formData.time,
-          }),
-        }
-      );
 
-      if (!response.ok) {
-        throw new Error('Erro ao criar agendamento');
-      }
+    // Construct WhatsApp message
+    const serviceName = services.find(s => s.id === formData.service)?.name || formData.service;
+    const message = `Olá! Gostaria de agendar uma visita.\n\n` +
+      `*Tipo de visita:* ${serviceName}\n` +
+      `*Data preferencial:* ${new Date(formData.date).toLocaleDateString('pt-BR')}\n` +
+      `*Horário preferencial:* ${formData.time}\n` +
+      `*Nome do responsável:* ${formData.parentName}\n` +
+      `*Telefone:* ${formData.phone}` +
+      (formData.childName ? `\n*Nome da criança:* ${formData.childName}` : '');
 
-      await response.json();
+    // Open WhatsApp with pre-filled message
+    const whatsappNumber = "5579933005359";
+    window.open(
+      `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`,
+      '_blank'
+    );
 
-      toast({
-        title: "Agendamento confirmado! 💛",
-        description: "Te enviamos os detalhes no WhatsApp.",
-      });
+    toast({
+      title: "Redirecionando para WhatsApp 💛",
+      description: "Complete seu agendamento pelo WhatsApp.",
+    });
 
-      // Reset form
-      setFormData({
-        service: "",
-        date: "",
-        time: "",
-        parentName: "",
-        phone: "",
-        childName: ""
-      });
-      setStep(1);
-    } catch (error) {
-      console.error('Error creating appointment:', error);
-      toast({
-        title: "Erro ao agendar",
-        description: "Não foi possível criar o agendamento. Tente novamente.",
-        variant: "destructive",
-      });
-    }
+    // Reset form
+    setFormData({
+      service: "",
+      date: "",
+      time: "",
+      parentName: "",
+      phone: "",
+      childName: ""
+    });
+    setStep(1);
   };
 
   const canProceed = (currentStep: number) => {
