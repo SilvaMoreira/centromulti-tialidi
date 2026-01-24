@@ -1,16 +1,18 @@
 import { Button } from "@/components/ui/button";
 import { Menu } from "lucide-react";
 import { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 import logoNovo from "@/assets/logo-novo.png";
 
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navLinks = [
-    { label: "Sobre", href: "#sobre" },
-    { label: "Especialidades", href: "#especialidades" },
-    { label: "Profissionais", href: "#profissionais" },
-    { label: "Contato", href: "#contato" },
+    { label: "Sobre", href: "/#sobre" },
+    { label: "Especialidades", href: "/#especialidades" },
+    { label: "Profissionais", href: "/#profissionais" },
+    { label: "Blog", href: "/blog" },
+    { label: "Contato", href: "/#contato" },
   ];
 
   const scrollToBooking = () => {
@@ -23,7 +25,7 @@ export const Header = () => {
       <div className="container mx-auto max-w-6xl px-4">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <a href="#" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
+          <Link to="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
             <img 
               src={logoNovo} 
               alt="Centro Multidisciplinar Tia Lidi" 
@@ -32,18 +34,28 @@ export const Header = () => {
             <span className="font-heading text-xl md:text-2xl font-semibold text-foreground">
               Centro Multidisciplinar<br />Tia Lidi
             </span>
-          </a>
+          </Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-8">
             {navLinks.map((link) => (
-              <a
-                key={link.href}
-                href={link.href}
-                className="text-foreground hover:text-primary transition-colors font-medium"
-              >
-                {link.label}
-              </a>
+              link.href.startsWith('/') && !link.href.includes('#') ? (
+                <Link
+                  key={link.href}
+                  to={link.href}
+                  className="text-foreground hover:text-primary transition-colors font-medium"
+                >
+                  {link.label}
+                </Link>
+              ) : (
+                <a
+                  key={link.href}
+                  href={link.href}
+                  className="text-foreground hover:text-primary transition-colors font-medium"
+                >
+                  {link.label}
+                </a>
+              )
             ))}
           </nav>
 
@@ -69,14 +81,25 @@ export const Header = () => {
           <div className="md:hidden py-4 border-t border-border animate-fade-in">
             <nav className="flex flex-col gap-4">
               {navLinks.map((link) => (
-                <a
-                  key={link.href}
-                  href={link.href}
-                  onClick={() => setIsMenuOpen(false)}
-                  className="text-foreground hover:text-primary transition-colors font-medium py-2"
-                >
-                  {link.label}
-                </a>
+                link.href.startsWith('/') && !link.href.includes('#') ? (
+                  <Link
+                    key={link.href}
+                    to={link.href}
+                    onClick={() => setIsMenuOpen(false)}
+                    className="text-foreground hover:text-primary transition-colors font-medium py-2"
+                  >
+                    {link.label}
+                  </Link>
+                ) : (
+                  <a
+                    key={link.href}
+                    href={link.href}
+                    onClick={() => setIsMenuOpen(false)}
+                    className="text-foreground hover:text-primary transition-colors font-medium py-2"
+                  >
+                    {link.label}
+                  </a>
+                )
               ))}
               <Button variant="cta" onClick={scrollToBooking} className="mt-2">
                 Agendar consulta
