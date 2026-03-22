@@ -1,4 +1,5 @@
 import { Instagram, Mail } from "lucide-react";
+import { Link } from "react-router-dom";
 import logoNovo from "@/assets/logo-novo.png";
 
 export const Footer = () => {
@@ -39,6 +40,11 @@ export const Footer = () => {
                 <a href="#profissionais" className="text-background/80 hover:text-background transition-colors">
                   Profissionais
                 </a>
+              </li>
+              <li>
+                <Link to="/blog" className="text-background/80 hover:text-background transition-colors">
+                  Blog
+                </Link>
               </li>
               <li>
                 <a href="#agendamento" className="text-background/80 hover:text-background transition-colors">
