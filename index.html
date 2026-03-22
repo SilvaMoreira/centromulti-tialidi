@@ -34,13 +34,14 @@
     <meta name="twitter:description" content="Psicopedagogia, psicologia infantil e fonoaudiologia em Aracaju. Agende sua visita." />
     <meta name="twitter:image" content="https://centromulti-tialidi.lovable.app/og-image.jpg" />
 
-    <!-- Structured Data / Schema.org -->
+    <!-- Structured Data / Schema.org - LocalBusiness -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "MedicalBusiness",
       "name": "Centro Multidisciplinar Tia Lidi",
-      "description": "Centro especializado em atendimento infantil com psicopedagogia, psicologia infantil e fonoaudiologia em Aracaju",
+      "alternateName": "Tia Lidi",
+      "description": "Centro especializado em atendimento infantil com psicopedagogia, psicologia infantil e fonoaudiologia em Aracaju, Sergipe. Referência em desenvolvimento infantil na região metropolitana.",
       "url": "https://centromulti-tialidi.lovable.app/",
       "logo": "https://centromulti-tialidi.lovable.app/favicon.png",
       "image": "https://centromulti-tialidi.lovable.app/og-image.jpg",
@@ -52,7 +53,8 @@
         "addressLocality": "Aracaju",
         "addressRegion": "SE",
         "postalCode": "49027-270",
-        "addressCountry": "BR"
+        "addressCountry": "BR",
+        "name": "Grageru"
       },
       "geo": {
         "@type": "GeoCoordinates",
@@ -68,13 +70,82 @@
         }
       ],
       "priceRange": "$$",
-      "areaServed": {
-        "@type": "City",
-        "name": "Aracaju"
-      },
+      "areaServed": [
+        { "@type": "City", "name": "Aracaju" },
+        { "@type": "City", "name": "Nossa Senhora do Socorro" },
+        { "@type": "City", "name": "Barra dos Coqueiros" },
+        { "@type": "City", "name": "São Cristóvão" },
+        { "@type": "City", "name": "Laranjeiras" }
+      ],
       "medicalSpecialty": ["Psicopedagogia", "Psicologia Infantil", "Fonoaudiologia"],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Serviços",
+        "itemListElement": [
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Psicopedagogia Infantil", "description": "Avaliação e intervenção em dificuldades de aprendizagem em Aracaju" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Psicologia Infantil", "description": "Acompanhamento psicológico para crianças em Aracaju, incluindo autismo e TDAH" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Fonoaudiologia", "description": "Tratamento de atraso de fala e distúrbios de linguagem em Aracaju" } }
+        ]
+      },
       "sameAs": [
+        "https://www.instagram.com/centromulti_tialidi/",
         "https://wa.me/5579933005359"
+      ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "500",
+        "bestRating": "5"
+      }
+    }
+    </script>
+
+    <!-- FAQ Schema - Homepage -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Onde encontrar psicopedagoga em Aracaju?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "O Centro Multidisciplinar Tia Lidi oferece atendimento psicopedagógico especializado no bairro Grageru, Aracaju-SE. Atendemos crianças de toda a região metropolitana incluindo Nossa Senhora do Socorro, Barra dos Coqueiros e São Cristóvão. Agende pelo WhatsApp (79) 93300-5359."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Qual o melhor centro de tratamento para autismo em Aracaju?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "O Centro Multidisciplinar Tia Lidi é referência no atendimento a crianças com Transtorno do Espectro Autista (TEA) em Aracaju. Nossa equipe multidisciplinar com psicólogos, psicopedagogos e fonoaudiólogos oferece intervenção precoce e acompanhamento especializado."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Como saber se meu filho precisa de fonoaudiólogo em Aracaju?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Se seu filho tem mais de 2 anos e não forma frases, troca sons nas palavras, tem dificuldade para ser entendido ou apresenta atraso na fala, é recomendável procurar um fonoaudiólogo. No Centro Tia Lidi em Aracaju oferecemos avaliação fonoaudiológica completa."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quais serviços o Centro Multidisciplinar Tia Lidi oferece?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Oferecemos psicopedagogia infantil, psicologia infantil (incluindo avaliação neuropsicológica), fonoaudiologia e acompanhamento para crianças com autismo, TDAH e dificuldades de aprendizagem. Estamos localizados no Grageru, Aracaju-SE."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Qual o horário de funcionamento do Centro Tia Lidi?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Funcionamos de segunda a sexta-feira, das 7h às 18h. Estamos na R. Dep. Francisco Guedes Melo, 85 - Grageru, Aracaju-SE. Agende sua consulta pelo WhatsApp (79) 93300-5359."
+          }
+        }
       ]
     }
     </script>
