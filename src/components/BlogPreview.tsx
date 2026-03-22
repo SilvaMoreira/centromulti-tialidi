@@ -27,8 +27,13 @@ export const BlogPreview = () => {
               to={`/blog/${post.slug}`}
               className="group bg-background rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 border border-border"
             >
-              <div className="aspect-video bg-gradient-to-br from-primary/20 to-secondary/20 flex items-center justify-center">
-                <span className="text-4xl">{post.slug.includes('fono') ? '🗣️' : post.slug.includes('psicologia') ? '🧠' : post.slug.includes('tdah') ? '⚡' : post.slug.includes('autismo') ? '🧩' : post.slug.includes('psicopedagogia') ? '📚' : '✨'}</span>
+              <div className="aspect-video overflow-hidden">
+                <img
+                  src={getBlogImage(post.slug, post.category)}
+                  alt={post.title}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  loading="lazy"
+                />
               </div>
               <div className="p-5">
                 <div className="flex items-center gap-2 text-sm text-muted-foreground mb-2">
