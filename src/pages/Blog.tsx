@@ -4,6 +4,7 @@ import { Footer } from "@/components/Footer";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
 import { SEOHead } from "@/components/SEOHead";
 import { blogPosts } from "@/data/blogPosts";
+import { getBlogImage } from "@/data/blogImages";
 import { Calendar, Clock, Tag } from "lucide-react";
 
 const Blog = () => {
