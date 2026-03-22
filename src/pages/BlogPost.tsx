@@ -44,6 +44,7 @@ const BlogPost = () => {
         keywords={post.keywords.join(", ")}
         type="article"
         publishedAt={post.publishedAt}
+        jsonLd={buildBlogPostingSchema(post)}
       />
       <Header />
       
