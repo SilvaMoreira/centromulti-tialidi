@@ -2,6 +2,7 @@ import { useParams, Link, Navigate } from "react-router-dom";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
+import { SEOHead } from "@/components/SEOHead";
 import { getBlogPostBySlug, blogPosts } from "@/data/blogPosts";
 import { Calendar, Clock, Tag, ArrowLeft, Share2 } from "lucide-react";
 import { useEffect } from "react";
@@ -36,6 +37,14 @@ const BlogPost = () => {
 
   return (
     <div className="min-h-screen">
+      <SEOHead
+        title={post.title}
+        description={post.excerpt}
+        url={`/blog/${post.slug}`}
+        keywords={post.keywords.join(", ")}
+        type="article"
+        publishedAt={post.publishedAt}
+      />
       <Header />
       
       <main className="pt-24 pb-16">

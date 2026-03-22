@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
+import { SEOHead } from "@/components/SEOHead";
 import { blogPosts } from "@/data/blogPosts";
 import { Calendar, Clock, Tag } from "lucide-react";
 
@@ -10,6 +11,12 @@ const Blog = () => {
 
   return (
     <div className="min-h-screen">
+      <SEOHead
+        title="Blog - Dicas sobre Desenvolvimento Infantil"
+        description="Artigos e dicas sobre psicopedagogia, psicologia infantil, fonoaudiologia e autismo em Aracaju, Sergipe. Conteúdo especializado para famílias."
+        url="/blog"
+        keywords="blog psicopedagogia aracaju, autismo aracaju, psicologia infantil sergipe, fonoaudiologia aracaju, desenvolvimento infantil"
+      />
       <Header />
       
       <main className="pt-24 pb-16">
