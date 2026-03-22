@@ -4,6 +4,7 @@ import { Footer } from "@/components/Footer";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
 import { SEOHead } from "@/components/SEOHead";
 import { blogPosts } from "@/data/blogPosts";
+import { getBlogImage } from "@/data/blogImages";
 import { Calendar, Clock, Tag } from "lucide-react";
 
 const Blog = () => {
@@ -58,7 +59,14 @@ const Blog = () => {
                   key={post.id}
                   className="bg-card rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-border"
                 >
-                  <div className="h-3 bg-gradient-to-r from-primary via-accent to-secondary" />
+                  <div className="aspect-video overflow-hidden">
+                    <img
+                      src={getBlogImage(post.slug, post.category)}
+                      alt={post.title}
+                      className="w-full h-full object-cover"
+                      loading="lazy"
+                    />
+                  </div>
                   <div className="p-6">
                     <div className="flex items-center gap-2 mb-3">
                       <span className="px-3 py-1 bg-primary/10 text-primary rounded-full text-xs font-medium">
