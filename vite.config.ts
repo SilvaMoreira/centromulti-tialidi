@@ -11,6 +11,7 @@ export default defineConfig(({ mode }) => ({
   },
   plugins: [react(), mode === "development" && componentTagger()].filter(Boolean),
   resolve: {
+    extensions: ['.tsx', '.ts', '.jsx', '.js', '.json'],
     alias: {
       "@": path.resolve(__dirname, "./src"),
     },
