@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { ArrowRight, Calendar } from "lucide-react";
 import { blogPosts } from "@/data/blogPosts";
+import { getBlogImage } from "@/data/blogImages";
 import { Button } from "@/components/ui/button";
 
 export const BlogPreview = () => {
