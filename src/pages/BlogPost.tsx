@@ -37,6 +37,14 @@ const BlogPost = () => {
 
   return (
     <div className="min-h-screen">
+      <SEOHead
+        title={post.title}
+        description={post.excerpt}
+        url={`/blog/${post.slug}`}
+        keywords={post.keywords.join(", ")}
+        type="article"
+        publishedAt={post.publishedAt}
+      />
       <Header />
       
       <main className="pt-24 pb-16">

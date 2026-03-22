@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
+import { SEOHead } from "@/components/SEOHead";
 import { blogPosts } from "@/data/blogPosts";
 import { Calendar, Clock, Tag } from "lucide-react";
 
