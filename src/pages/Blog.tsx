@@ -67,6 +67,7 @@ const Blog = () => {
                       loading="lazy"
                     />
                   </div>
+                  <div className="p-6">
                     <div className="flex items-center gap-2 mb-3">
                       <span className="px-3 py-1 bg-primary/10 text-primary rounded-full text-xs font-medium">
                         {post.category}
