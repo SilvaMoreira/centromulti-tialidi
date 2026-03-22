@@ -12,6 +12,343 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    id: "12",
+    slug: "pedagoga-aracaju-papel-desenvolvimento-infantil",
+    title: "Pedagoga em Aracaju: O Papel no Desenvolvimento Infantil",
+    excerpt: "Entenda como a pedagoga especializada pode transformar o aprendizado do seu filho em Aracaju e região metropolitana de Sergipe.",
+    content: `
+## O Papel da Pedagoga no Desenvolvimento Infantil
+
+A pedagoga é uma profissional essencial para o desenvolvimento educacional das crianças. Em Aracaju, Sergipe, cada vez mais famílias reconhecem a importância desse acompanhamento especializado para garantir que seus filhos alcancem seu pleno potencial.
+
+## Quando procurar uma pedagoga em Aracaju?
+
+Famílias de Aracaju, Nossa Senhora do Socorro, Barra dos Coqueiros, São Cristóvão e Laranjeiras devem considerar o acompanhamento pedagógico quando observarem:
+
+- **Dificuldade na alfabetização** ou leitura
+- **Desinteresse pela escola** sem motivo aparente
+- **Problemas de organização** nos estudos
+- **Baixo rendimento escolar** apesar do esforço
+- **Necessidade de reforço** em áreas específicas
+
+## Diferença entre pedagoga e psicopedagoga
+
+Muitos pais em Sergipe confundem essas duas profissionais:
+
+- **Pedagoga**: Foca no processo de ensino-aprendizagem, metodologias e práticas educacionais
+- **Psicopedagoga**: Investiga as causas das dificuldades de aprendizagem, incluindo aspectos emocionais e cognitivos
+
+## Benefícios do acompanhamento pedagógico
+
+1. **Melhora no desempenho escolar**
+2. **Desenvolvimento de hábitos de estudo**
+3. **Aumento da autonomia** no aprendizado
+4. **Fortalecimento da autoconfiança**
+5. **Identificação precoce de dificuldades**
+
+## Atendimento pedagógico no Grageru, Aracaju
+
+No Centro Multidisciplinar Tia Lidi, nossa equipe pedagógica trabalha de forma integrada com psicólogos e fonoaudiólogos, oferecendo um atendimento completo para crianças de toda a Grande Aracaju.
+
+## Agende uma avaliação
+
+Se você busca uma pedagoga em Aracaju, entre em contato conosco e conheça nosso trabalho especializado em desenvolvimento infantil.
+    `,
+    category: "Pedagogia",
+    publishedAt: "2025-03-22",
+    readTime: "5 min",
+    keywords: ["pedagoga aracaju", "pedagogia infantil sergipe", "reforço escolar aracaju", "educação infantil grageru"]
+  },
+  {
+    id: "11",
+    slug: "autismo-leve-sinais-diagnostico-aracaju",
+    title: "Autismo Leve em Crianças: Sinais e Diagnóstico em Aracaju",
+    excerpt: "Conheça os sinais do autismo leve (TEA nível 1) em crianças e saiba onde buscar diagnóstico especializado em Aracaju, Sergipe.",
+    content: `
+## O que é o Autismo Leve (TEA Nível 1)?
+
+O autismo leve, classificado como TEA Nível 1, é caracterizado por dificuldades sutis na comunicação social e comportamentos restritos. Em Aracaju e Sergipe, muitas famílias demoram a identificar esses sinais por serem menos evidentes.
+
+## Sinais do autismo leve em crianças
+
+Pais e educadores em Aracaju e região metropolitana devem ficar atentos a:
+
+### Comunicação Social:
+- Dificuldade em iniciar conversas
+- Respostas sociais atípicas
+- Dificuldade em fazer amigos
+- Interpretação literal da linguagem
+- Pouca expressão facial em algumas situações
+
+### Comportamento:
+- Interesses intensos e específicos
+- Preferência por rotinas rígidas
+- Desconforto com mudanças
+- Sensibilidade sensorial (sons, texturas, luzes)
+
+## Diagnóstico em Aracaju
+
+O diagnóstico do autismo leve requer avaliação multidisciplinar com:
+
+1. **Psicólogo especializado** em neurodesenvolvimento
+2. **Fonoaudiólogo** para avaliar comunicação
+3. **Psicopedagogo** para avaliar aprendizagem
+
+## Importância do diagnóstico precoce
+
+Quanto mais cedo o diagnóstico, melhores os resultados. Crianças com autismo leve podem desenvolver habilidades sociais e acadêmicas com o suporte adequado.
+
+## Tratamento multidisciplinar no Grageru
+
+O Centro Multidisciplinar Tia Lidi oferece avaliação e acompanhamento completo para crianças com suspeita de TEA em Aracaju, Nossa Senhora do Socorro, Barra dos Coqueiros e toda região metropolitana.
+
+## Agende uma avaliação
+
+Não espere. O diagnóstico precoce faz toda a diferença no desenvolvimento da criança.
+    `,
+    category: "Autismo",
+    publishedAt: "2025-03-15",
+    readTime: "6 min",
+    keywords: ["autismo leve aracaju", "tea nível 1 sergipe", "diagnóstico autismo criança", "autismo infantil aracaju"]
+  },
+  {
+    id: "10",
+    slug: "psicopedagoga-aracaju-como-escolher",
+    title: "Psicopedagoga em Aracaju: Como Escolher a Profissional Ideal",
+    excerpt: "Guia completo para encontrar a melhor psicopedagoga em Aracaju e entender como funciona o atendimento psicopedagógico em Sergipe.",
+    content: `
+## O que faz uma Psicopedagoga?
+
+A psicopedagoga é a profissional que investiga e trata as dificuldades de aprendizagem. Em Aracaju, capital de Sergipe, a demanda por esse atendimento tem crescido significativamente.
+
+## Como escolher uma psicopedagoga em Aracaju
+
+Ao buscar uma psicopedagoga em Aracaju e região metropolitana, considere:
+
+### Formação e Experiência:
+- Graduação em Pedagogia ou Psicologia
+- Especialização em Psicopedagogia
+- Experiência com a faixa etária do seu filho
+- Atualização profissional constante
+
+### Abordagem:
+- Avaliação completa antes do tratamento
+- Plano individualizado para cada criança
+- Comunicação clara com a família
+- Trabalho em parceria com a escola
+
+## Quando procurar uma psicopedagoga?
+
+Moradores de Aracaju, Nossa Senhora do Socorro, Barra dos Coqueiros e São Cristóvão devem buscar ajuda quando a criança apresentar:
+
+- **Dificuldade persistente** na leitura ou escrita
+- **Notas baixas** que não melhoram com reforço
+- **Diagnóstico de TDAH**, dislexia ou outros transtornos
+- **Falta de motivação** para estudar
+- **Dificuldade de concentração** nas tarefas escolares
+
+## Avaliação psicopedagógica
+
+A avaliação inclui:
+
+1. **Anamnese** com os pais
+2. **Testes específicos** de aprendizagem
+3. **Observação** do comportamento
+4. **Relatório** com orientações
+
+## Centro Multidisciplinar Tia Lidi
+
+Localizado no Grageru, Aracaju, nosso centro oferece atendimento psicopedagógico integrado com psicologia e fonoaudiologia, garantindo um cuidado completo para seu filho.
+
+## Marque uma consulta
+
+Encontre a melhor psicopedagoga para seu filho. Agende uma avaliação no Centro Tia Lidi.
+    `,
+    category: "Psicopedagogia",
+    publishedAt: "2025-03-08",
+    readTime: "5 min",
+    keywords: ["psicopedagoga aracaju", "psicopedagogia sergipe", "atendimento psicopedagógico", "dificuldade aprendizagem grageru"]
+  },
+  {
+    id: "9",
+    slug: "autismo-escola-inclusao-aracaju",
+    title: "Autismo e Escola: Dicas de Inclusão para Famílias em Aracaju",
+    excerpt: "Orientações práticas para famílias e escolas de Aracaju sobre inclusão escolar de crianças autistas em Sergipe.",
+    content: `
+## Inclusão Escolar e Autismo em Aracaju
+
+A inclusão de crianças autistas nas escolas de Aracaju e Sergipe é um direito garantido por lei. Porém, muitas famílias ainda enfrentam desafios nesse processo.
+
+## Direitos da criança autista na escola
+
+Em Aracaju e todo Brasil, crianças com TEA têm direito a:
+
+- **Matrícula garantida** em escola regular
+- **Acompanhante especializado** quando necessário
+- **Adaptações curriculares** individualizadas
+- **Atendimento Educacional Especializado (AEE)**
+- **Avaliação diferenciada**
+
+## Como preparar a escola
+
+Famílias de Aracaju, Nossa Senhora do Socorro e região podem:
+
+1. **Compartilhar o laudo** com a coordenação
+2. **Reunir-se com professores** regularmente
+3. **Solicitar adaptações** específicas
+4. **Manter comunicação** constante com a escola
+5. **Buscar apoio** de profissionais especializados
+
+## Estratégias que funcionam
+
+### Em sala de aula:
+- Rotina visual clara
+- Instruções objetivas e diretas
+- Ambiente com menos estímulos sensoriais
+- Tempo extra para atividades
+
+### Em casa:
+- Reforço positivo das conquistas
+- Antecipar mudanças de rotina
+- Manter diálogo com a escola
+- Buscar atividades sociais estruturadas
+
+## Apoio multidisciplinar em Aracaju
+
+O Centro Multidisciplinar Tia Lidi no Grageru oferece suporte completo para famílias de crianças autistas, incluindo orientação para escolas e acompanhamento psicopedagógico.
+
+## Busque orientação especializada
+
+A inclusão escolar é um processo que precisa de apoio profissional. Agende uma consulta e receba orientações personalizadas.
+    `,
+    category: "Autismo",
+    publishedAt: "2025-03-01",
+    readTime: "6 min",
+    keywords: ["autismo escola aracaju", "inclusão escolar sergipe", "tea escola", "criança autista escola aracaju"]
+  },
+  {
+    id: "8",
+    slug: "ansiedade-infantil-aracaju-tratamento",
+    title: "Ansiedade Infantil em Aracaju: Sinais, Causas e Tratamento",
+    excerpt: "Saiba como identificar a ansiedade em crianças e onde encontrar tratamento especializado em Aracaju e região metropolitana de Sergipe.",
+    content: `
+## Ansiedade Infantil: Um Problema Crescente
+
+A ansiedade infantil tem se tornado cada vez mais comum em Aracaju e em todo Sergipe. Identificar os sinais precocemente é fundamental para o bem-estar da criança.
+
+## Sinais de ansiedade em crianças
+
+Pais em Aracaju e região metropolitana devem observar:
+
+### Sinais emocionais:
+- Preocupação excessiva com o futuro
+- Medo intenso de situações cotidianas
+- Choro frequente sem motivo aparente
+- Irritabilidade constante
+
+### Sinais físicos:
+- Dores de barriga recorrentes
+- Dores de cabeça frequentes
+- Dificuldade para dormir
+- Falta de apetite ou comer demais
+
+### Sinais comportamentais:
+- Recusa em ir à escola
+- Evitar situações sociais
+- Dependência excessiva dos pais
+- Perfeccionismo extremo
+
+## Causas comuns da ansiedade infantil
+
+- Mudanças na rotina familiar
+- Pressão escolar
+- Conflitos familiares
+- Uso excessivo de telas
+- Bullying
+
+## Tratamento da ansiedade infantil em Aracaju
+
+O tratamento mais eficaz combina:
+
+1. **Terapia cognitivo-comportamental** com psicólogo infantil
+2. **Orientação familiar** para manejo em casa
+3. **Atividades lúdicas** e de relaxamento
+4. **Acompanhamento escolar** quando necessário
+
+## Atendimento especializado no Grageru
+
+No Centro Multidisciplinar Tia Lidi, oferecemos atendimento psicológico especializado para crianças ansiosas de Aracaju, Nossa Senhora do Socorro, Barra dos Coqueiros e toda região.
+
+## Cuide da saúde emocional do seu filho
+
+Não ignore os sinais de ansiedade. Agende uma avaliação com nossa equipe especializada.
+    `,
+    category: "Psicologia",
+    publishedAt: "2025-02-22",
+    readTime: "5 min",
+    keywords: ["ansiedade infantil aracaju", "ansiedade criança sergipe", "psicólogo infantil ansiedade", "tratamento ansiedade aracaju"]
+  },
+  {
+    id: "7",
+    slug: "atraso-fala-crianca-aracaju-fonoaudiologo",
+    title: "Atraso na Fala: Quando Procurar um Fonoaudiólogo em Aracaju",
+    excerpt: "Descubra os marcos do desenvolvimento da fala e quando buscar um fonoaudiólogo em Aracaju para seu filho.",
+    content: `
+## Atraso na Fala Infantil
+
+O atraso no desenvolvimento da fala é uma das queixas mais comuns nos consultórios de fonoaudiologia em Aracaju, Sergipe. Identificar precocemente é essencial.
+
+## Quando a fala está atrasada?
+
+Referências para famílias de Aracaju e região:
+
+### Até 1 ano:
+- Deve balbuciar e reagir a sons
+- Primeiras palavras como "mamã" e "papá"
+
+### 1 a 2 anos:
+- Vocabulário de 50+ palavras
+- Começar a combinar palavras
+
+### 2 a 3 anos:
+- Frases de 2-3 palavras
+- Ser compreendido por familiares
+
+### 3 a 4 anos:
+- Frases completas
+- Contar histórias simples
+- Ser entendido por estranhos
+
+## Fatores que podem causar atraso
+
+- **Otites de repetição** (infecções de ouvido)
+- **Pouca estimulação** verbal em casa
+- **Uso excessivo de telas** e chupeta
+- **Bilinguismo** (atraso temporário e normal)
+- **Transtornos do neurodesenvolvimento** como autismo
+
+## O que o fonoaudiólogo faz?
+
+1. **Avaliação completa** da linguagem
+2. **Estimulação** da fala e linguagem
+3. **Orientação** para os pais
+4. **Terapia lúdica** adaptada à idade
+5. **Acompanhamento** do progresso
+
+## Fonoaudiologia no Centro Tia Lidi
+
+Localizado no Grageru, Aracaju, atendemos crianças de toda a região metropolitana com tratamento fonoaudiológico especializado e integrado com psicologia e psicopedagogia.
+
+## Não espere para agir
+
+Quanto mais cedo iniciar o tratamento, melhores os resultados. Agende uma avaliação fonoaudiológica.
+    `,
+    category: "Fonoaudiologia",
+    publishedAt: "2025-02-15",
+    readTime: "5 min",
+    keywords: ["atraso fala aracaju", "fonoaudiólogo criança sergipe", "fonoaudiologia infantil aracaju", "criança não fala"]
+  },
+  {
     id: "1",
     slug: "psicopedagogia-infantil-aracaju-quando-procurar",
     title: "Psicopedagogia Infantil em Aracaju: Quando Procurar um Especialista?",
@@ -44,7 +381,7 @@ A vantagem de um centro multidisciplinar é a integração entre diferentes prof
 Se você identificou algum desses sinais em seu filho, não hesite em buscar ajuda profissional. Entre em contato conosco e agende uma avaliação psicopedagógica.
     `,
     category: "Psicopedagogia",
-    publishedAt: "2025-01-15",
+    publishedAt: "2025-02-08",
     readTime: "5 min",
     keywords: ["psicopedagogia aracaju", "psicopedagogo sergipe", "dificuldade de aprendizagem", "grageru"]
   },
@@ -71,8 +408,6 @@ Moradores de Aracaju, Nossa Senhora do Socorro, Barra dos Coqueiros, Laranjeiras
 
 ## Benefícios da terapia infantil
 
-O acompanhamento psicológico oferece diversos benefícios para crianças de todas as idades:
-
 1. **Autoconhecimento** e expressão de emoções
 2. **Desenvolvimento de habilidades sociais**
 3. **Melhora no desempenho escolar**
@@ -88,7 +423,7 @@ No Centro Multidisciplinar Tia Lidi, nossa psicóloga utiliza técnicas específ
 Cuide da saúde emocional do seu filho. Entre em contato e conheça nosso trabalho de psicologia infantil em Aracaju.
     `,
     category: "Psicologia",
-    publishedAt: "2025-01-10",
+    publishedAt: "2025-02-01",
     readTime: "4 min",
     keywords: ["psicologia infantil aracaju", "psicólogo criança sergipe", "terapia infantil", "desenvolvimento emocional"]
   },
@@ -104,8 +439,6 @@ A fonoaudiologia é essencial para o desenvolvimento da comunicação das crian�
 
 ## Marcos do desenvolvimento da fala
 
-Para famílias de Aracaju, Nossa Senhora do Socorro, São Cristóvão e outras cidades sergipanas, é importante conhecer os marcos do desenvolvimento:
-
 - **6 meses**: Balbucio e reação a sons
 - **1 ano**: Primeiras palavras
 - **2 anos**: Combinação de duas palavras
@@ -114,29 +447,22 @@ Para famílias de Aracaju, Nossa Senhora do Socorro, São Cristóvão e outras c
 
 ## Sinais de alerta para buscar um fonoaudiólogo
 
-Procure um fonoaudiólogo em Aracaju se observar:
-
 - **Atraso na fala** para a idade
 - **Dificuldade de compreensão** do que é dito
-- **Troca de sons** nas palavras (fala "tasa" em vez de "casa")
+- **Troca de sons** nas palavras
 - **Gagueira** persistente
 - **Voz rouca** frequente
-- **Dificuldade de engolir** ou mastigar
 
 ## Tratamento fonoaudiológico infantil
 
-O tratamento é realizado de forma lúdica, respeitando o ritmo de cada criança. Em nosso centro no Grageru, utilizamos jogos, músicas e atividades interativas para estimular o desenvolvimento da linguagem.
-
-## Atendimento em Aracaju e região
-
-O Centro Multidisciplinar Tia Lidi atende crianças de toda a Grande Aracaju, incluindo Barra dos Coqueiros, Nossa Senhora do Socorro, São Cristóvão e Laranjeiras.
+O tratamento é realizado de forma lúdica, respeitando o ritmo de cada criança. Em nosso centro no Grageru, utilizamos jogos, músicas e atividades interativas.
 
 ## Agende uma avaliação fonoaudiológica
 
-Quanto antes identificar e tratar as dificuldades de fala, melhores serão os resultados. Agende uma avaliação para seu filho.
+Quanto antes identificar e tratar as dificuldades de fala, melhores serão os resultados.
     `,
     category: "Fonoaudiologia",
-    publishedAt: "2025-01-05",
+    publishedAt: "2025-01-25",
     readTime: "5 min",
     keywords: ["fonoaudiologia aracaju", "fonoaudiologo sergipe", "atraso na fala", "desenvolvimento linguagem"]
   },
@@ -148,36 +474,21 @@ Quanto antes identificar e tratar as dificuldades de fala, melhores serão os re
     content: `
 ## O que é o TDAH?
 
-O Transtorno do Déficit de Atenção com Hiperatividade (TDAH) é um dos transtornos mais comuns na infância. Em Aracaju e Sergipe, muitas famílias buscam informações e tratamento para seus filhos.
+O Transtorno do Déficit de Atenção com Hiperatividade (TDAH) é um dos transtornos mais comuns na infância. Em Aracaju e Sergipe, muitas famílias buscam informações e tratamento.
 
 ## Sinais do TDAH em crianças
-
-Para pais em Aracaju e região metropolitana, é importante reconhecer os sinais:
 
 ### Desatenção:
 - Dificuldade em manter foco nas tarefas
 - Não parece ouvir quando falam diretamente
 - Perde objetos com frequência
-- Dificuldade em organizar atividades
 
 ### Hiperatividade:
 - Não consegue ficar parado
-- Corre ou escala em situações inadequadas
 - Fala excessivamente
 - Dificuldade em esperar sua vez
 
-### Impulsividade:
-- Interrompe conversas
-- Responde antes de ouvir toda a pergunta
-- Age sem pensar nas consequências
-
-## Diagnóstico do TDAH
-
-O diagnóstico deve ser feito por profissionais especializados. Em nosso centro em Aracaju, oferecemos avaliação completa com psicólogo e acompanhamento multidisciplinar.
-
 ## Tratamento multidisciplinar em Aracaju
-
-O tratamento do TDAH é mais eficaz quando envolve diferentes profissionais:
 
 1. **Psicólogo**: Terapia comportamental
 2. **Psicopedagogo**: Estratégias de aprendizagem
@@ -185,14 +496,10 @@ O tratamento do TDAH é mais eficaz quando envolve diferentes profissionais:
 
 ## Centro especializado no Grageru
 
-O Centro Multidisciplinar Tia Lidi oferece atendimento integrado para crianças com TDAH em Aracaju, Barra dos Coqueiros, Nossa Senhora do Socorro e toda região metropolitana.
-
-## Busque ajuda especializada
-
-O diagnóstico precoce e tratamento adequado fazem toda diferença. Agende uma avaliação.
+O Centro Multidisciplinar Tia Lidi oferece atendimento integrado para crianças com TDAH em Aracaju e toda região metropolitana.
     `,
     category: "Psicologia",
-    publishedAt: "2024-12-28",
+    publishedAt: "2025-01-18",
     readTime: "6 min",
     keywords: ["tdah aracaju", "hiperatividade criança sergipe", "déficit de atenção", "tratamento tdah"]
   },
@@ -204,54 +511,36 @@ O diagnóstico precoce e tratamento adequado fazem toda diferença. Agende uma a
     content: `
 ## Transtorno do Espectro Autista (TEA)
 
-O Transtorno do Espectro Autista é uma condição do neurodesenvolvimento que afeta a comunicação e interação social. Em Aracaju e Sergipe, o diagnóstico e tratamento precoce são fundamentais.
+O TEA é uma condição do neurodesenvolvimento que afeta a comunicação e interação social. Em Aracaju e Sergipe, o diagnóstico e tratamento precoce são fundamentais.
 
 ## Sinais precoces do autismo
-
-Famílias de Aracaju e região metropolitana devem observar:
 
 ### Até 12 meses:
 - Pouco contato visual
 - Não responde ao nome
-- Não aponta para objetos
 
 ### 12 a 24 meses:
 - Atraso na fala
-- Não imita gestos
 - Prefere brincar sozinho
 
 ### Após 24 meses:
 - Dificuldade de interação social
 - Comportamentos repetitivos
-- Interesses restritos
 
 ## Por que a intervenção precoce é crucial?
 
-Quanto mais cedo começar o tratamento, melhores são os resultados. O cérebro infantil tem maior plasticidade, permitindo:
-
-- Desenvolvimento de habilidades sociais
-- Melhora na comunicação
-- Redução de comportamentos desafiadores
-- Maior independência
+O cérebro infantil tem maior plasticidade, permitindo desenvolvimento de habilidades sociais, melhora na comunicação e maior independência.
 
 ## Atendimento multidisciplinar para autismo
 
-Em nosso centro no Grageru, Aracaju, oferecemos:
-
-1. **Avaliação psicológica** especializada
-2. **Fonoaudiologia** para desenvolvimento da comunicação
-3. **Psicopedagogia** para aprendizagem
-
-## Atendemos toda região metropolitana
-
-Recebemos famílias de Aracaju, Nossa Senhora do Socorro, Barra dos Coqueiros, São Cristóvão, Laranjeiras e outras cidades de Sergipe.
+Em nosso centro no Grageru, Aracaju, oferecemos avaliação psicológica, fonoaudiologia e psicopedagogia integradas.
 
 ## Agende uma avaliação
 
-Não espere. A intervenção precoce pode transformar a vida do seu filho. Entre em contato conosco.
+A intervenção precoce pode transformar a vida do seu filho. Entre em contato conosco.
     `,
-    category: "Psicopedagogia",
-    publishedAt: "2024-12-20",
+    category: "Autismo",
+    publishedAt: "2025-01-11",
     readTime: "5 min",
     keywords: ["autismo aracaju", "tea sergipe", "intervenção precoce", "autismo infantil"]
   },
@@ -270,45 +559,29 @@ Muitas crianças em Aracaju enfrentam desafios no processo de aprendizagem. Iden
 ### Dislexia
 - Dificuldade na leitura e escrita
 - Troca de letras semelhantes
-- Lentidão na alfabetização
 
 ### Discalculia
 - Dificuldade com números
 - Problemas em operações matemáticas
-- Confusão com sequências numéricas
 
 ### Disgrafia
 - Letra ilegível
 - Dificuldade na coordenação motora para escrita
-- Cansaço excessivo ao escrever
-
-## Como identificar em casa
-
-Pais de Aracaju e região metropolitana de Sergipe podem observar:
-
-- Resistência em fazer lição de casa
-- Demora excessiva em tarefas simples
-- Frustração frequente com estudos
-- Notas que não refletem o esforço
 
 ## Papel do psicopedagogo
 
-O psicopedagogo avalia e cria estratégias personalizadas para cada criança, trabalhando suas dificuldades específicas de forma lúdica e eficaz.
-
-## Trabalho conjunto com a escola
-
-Em Aracaju, mantemos contato com as escolas para alinhar as estratégias de aprendizagem, garantindo que a criança receba suporte tanto em casa quanto na escola.
+O psicopedagogo avalia e cria estratégias personalizadas para cada criança, trabalhando suas dificuldades de forma lúdica e eficaz.
 
 ## Centro Multidisciplinar Tia Lidi
 
-Localizado no Grageru, atendemos crianças de toda Aracaju, Nossa Senhora do Socorro, Barra dos Coqueiros e região. Nossa equipe está preparada para ajudar seu filho a superar as dificuldades de aprendizagem.
+Localizado no Grageru, atendemos crianças de toda Aracaju, Nossa Senhora do Socorro, Barra dos Coqueiros e região.
 
 ## Marque uma avaliação
 
-Não deixe as dificuldades de aprendizagem prejudicarem o desenvolvimento do seu filho. Agende uma avaliação psicopedagógica.
+Não deixe as dificuldades de aprendizagem prejudicarem o desenvolvimento do seu filho.
     `,
     category: "Psicopedagogia",
-    publishedAt: "2024-12-15",
+    publishedAt: "2025-01-04",
     readTime: "5 min",
     keywords: ["dificuldade aprendizagem aracaju", "dislexia sergipe", "psicopedagogo escola", "reforço escolar"]
   }
