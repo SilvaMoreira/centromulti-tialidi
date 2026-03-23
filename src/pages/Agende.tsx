@@ -28,8 +28,9 @@ const benefits = [
 const Agende = () => {
   const handleWhatsApp = () => {
     window.open(
-      "https://wa.me/5579933005359?text=" +
-        encodeURIComponent("Olá! Gostaria de agendar uma avaliação para meu filho(a)."),
+      "https://api.whatsapp.com/send/?phone=5579933005359&text=" +
+        encodeURIComponent("Olá! Gostaria de agendar uma avaliação para meu filho(a).") +
+        "&type=phone_number&app_absent=0",
       "_blank"
     );
   };
