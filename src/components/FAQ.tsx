@@ -86,7 +86,7 @@ export const FAQ = () => {
             Ainda tem dúvidas? Fale com nossa equipe!
           </p>
           <a
-            href="https://wa.me/5579933005359"
+            href="https://api.whatsapp.com/send/?phone=5579933005359&text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais.&type=phone_number&app_absent=0"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center px-8 py-3 bg-primary text-primary-foreground rounded-full font-semibold hover:bg-primary/90 transition-colors"

@@ -53,7 +53,7 @@ export const Contact = () => {
                     (79) 93300-5359
                   </p>
                   <Button 
-                    onClick={() => window.open('https://wa.me/5579933005359?text=Olá! Gostaria de agendar uma consulta.', '_blank')}
+                    onClick={() => window.open('https://api.whatsapp.com/send/?phone=5579933005359&text=' + encodeURIComponent('Olá! Gostaria de agendar uma consulta.') + '&type=phone_number&app_absent=0', '_blank')}
                     className="w-full bg-[#25D366] hover:bg-[#20BD5A] text-white"
                   >
                     <MessageCircle className="w-4 h-4 mr-2" />
