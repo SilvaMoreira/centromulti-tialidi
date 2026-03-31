@@ -12,6 +12,374 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    id: "18",
+    slug: "psicologo-infantil-perto-de-mim-aracaju",
+    title: "Psicólogo Infantil Perto de Mim em Aracaju: Onde Encontrar?",
+    excerpt: "Está buscando um psicólogo infantil perto de você em Aracaju? Conheça o Centro Multidisciplinar Tia Lidi no Grageru e saiba como funciona o atendimento.",
+    content: `
+## Psicólogo Infantil Perto de Mim: Como Encontrar em Aracaju
+
+Se você está pesquisando "psicólogo infantil perto de mim" em Aracaju, saiba que o Centro Multidisciplinar Tia Lidi está localizado no bairro Grageru, com fácil acesso para famílias de toda a capital e região metropolitana de Sergipe.
+
+## Por que buscar um psicólogo infantil?
+
+O acompanhamento psicológico infantil é recomendado para crianças que apresentam:
+
+- **Dificuldade de socialização** na escola ou em casa
+- **Mudanças de comportamento** repentinas
+- **Medos ou fobias** que atrapalham a rotina
+- **Agressividade** ou isolamento social
+- **Baixa autoestima** ou insegurança
+- **Luto ou separação dos pais**
+
+## Como funciona a consulta com psicólogo infantil?
+
+A primeira consulta geralmente inclui:
+
+1. **Entrevista com os pais** para entender o histórico
+2. **Sessão lúdica** com a criança para observação
+3. **Devolutiva** com orientações iniciais
+4. **Plano terapêutico** personalizado
+
+## Localização privilegiada em Aracaju
+
+Nosso centro fica na R. Dep. Francisco Guedes Melo, 85 – Grageru, Aracaju-SE. Atendemos famílias de:
+
+- **Aracaju** (todos os bairros)
+- **Nossa Senhora do Socorro**
+- **Barra dos Coqueiros**
+- **São Cristóvão**
+- **Laranjeiras**
+
+## Diferenciais do Centro Tia Lidi
+
+- Equipe 100% especializada em crianças
+- Ambiente acolhedor e lúdico
+- Atendimento multidisciplinar integrado
+- Horários flexíveis de segunda a sexta
+
+## Agende pelo WhatsApp
+
+Encontre o psicólogo infantil ideal para seu filho. [Agende agora pelo WhatsApp](https://api.whatsapp.com/send/?phone=5579933005359&text=Ol%C3%A1%21+Gostaria+de+agendar+uma+consulta+com+psic%C3%B3logo+infantil.&type=phone_number&app_absent=0) e garanta o melhor cuidado para seu pequeno.
+    `,
+    category: "Psicologia",
+    publishedAt: "2025-04-05",
+    readTime: "5 min",
+    keywords: ["psicólogo infantil perto de mim", "psicólogo infantil aracaju", "psicólogo criança grageru", "consulta psicologia infantil sergipe"]
+  },
+  {
+    id: "17",
+    slug: "crianca-nao-fala-2-anos-aracaju",
+    title: "Meu Filho Tem 2 Anos e Não Fala: O Que Fazer em Aracaju?",
+    excerpt: "Seu filho tem 2 anos e ainda não fala? Descubra quando se preocupar e onde buscar ajuda fonoaudiológica em Aracaju, Sergipe.",
+    content: `
+## Meu Filho Tem 2 Anos e Não Fala
+
+Uma das maiores preocupações dos pais em Aracaju e Sergipe é quando o filho chega aos 2 anos e ainda não fala. Vamos esclarecer quando isso é normal e quando buscar ajuda.
+
+## O que é esperado aos 2 anos?
+
+Aos 2 anos, a maioria das crianças já deve:
+
+- Falar pelo menos **50 palavras**
+- Começar a **juntar duas palavras** ("mamãe água", "quero bola")
+- **Apontar** para o que deseja
+- **Entender** comandos simples
+
+## Quando devo me preocupar?
+
+Procure um fonoaudiólogo em Aracaju se seu filho:
+
+- **Não fala nenhuma palavra** aos 18 meses
+- **Não combina palavras** aos 2 anos
+- **Não aponta** para objetos de interesse
+- **Não responde** quando chamado pelo nome
+- **Perdeu** palavras que já falava antes
+- **Não imita** sons ou gestos
+
+## Possíveis causas do atraso na fala
+
+- **Atraso simples** de linguagem (mais comum em meninos)
+- **Otites** frequentes que afetam a audição
+- **Uso excessivo de telas** (celular, tablet, TV)
+- **Falta de estimulação** verbal
+- **Transtorno do Espectro Autista (TEA)**
+- **Perda auditiva**
+
+## O que fazer agora?
+
+1. **Reduza telas** a no máximo 1 hora por dia
+2. **Converse muito** com seu filho durante o dia
+3. **Leia livros** e cante músicas
+4. **Nomeie tudo**: objetos, ações, sentimentos
+5. **Agende uma avaliação** fonoaudiológica
+
+## Fonoaudiologia Infantil em Aracaju
+
+No Centro Multidisciplinar Tia Lidi no Grageru, nossa fonoaudióloga é especializada em estimulação de fala para crianças de todas as idades. Atendemos famílias de Aracaju, Nossa Senhora do Socorro, Barra dos Coqueiros e toda região.
+
+## Não espere mais
+
+Quanto mais cedo iniciar a estimulação, melhores os resultados. [Agende pelo WhatsApp](https://api.whatsapp.com/send/?phone=5579933005359&text=Ol%C3%A1%21+Meu+filho+tem+atraso+na+fala+e+gostaria+de+agendar+uma+avalia%C3%A7%C3%A3o.&type=phone_number&app_absent=0).
+    `,
+    category: "Fonoaudiologia",
+    publishedAt: "2025-03-29",
+    readTime: "6 min",
+    keywords: ["criança não fala 2 anos", "atraso na fala aracaju", "filho não fala", "fonoaudiólogo infantil sergipe", "estimulação de fala"]
+  },
+  {
+    id: "16",
+    slug: "sinais-autismo-bebe-aracaju",
+    title: "Sinais de Autismo em Bebê: Como Identificar Antes dos 2 Anos em Aracaju",
+    excerpt: "Conheça os primeiros sinais de autismo em bebês e saiba onde buscar avaliação especializada em Aracaju e Sergipe.",
+    content: `
+## Como Identificar Autismo em Bebês
+
+A identificação precoce do Transtorno do Espectro Autista (TEA) é fundamental. Em Aracaju e Sergipe, muitas famílias desconhecem os sinais que podem aparecer já nos primeiros meses de vida.
+
+## Sinais de autismo entre 0 e 6 meses
+
+- **Pouco contato visual** durante a amamentação
+- **Não sorri** socialmente
+- **Não reage** a vozes familiares
+- **Rigidez corporal** ou hipotonia excessiva
+
+## Sinais entre 6 e 12 meses
+
+- **Não balbucia** ("bababá", "mamama")
+- **Não responde** ao próprio nome
+- **Não aponta** para objetos
+- **Não faz gestos** como dar tchau
+- **Pouca expressão facial**
+
+## Sinais entre 12 e 24 meses
+
+- **Atraso na fala** (não fala palavras simples)
+- **Não brinca de faz-de-conta**
+- **Alinha brinquedos** em vez de brincar com eles
+- **Movimentos repetitivos** (balançar mãos, girar)
+- **Não compartilha** atenção com os pais (não aponta para mostrar algo)
+- **Hipersensibilidade** a sons ou texturas
+
+## O que fazer se suspeitar?
+
+1. **Converse com o pediatra** sobre suas observações
+2. **Busque avaliação multidisciplinar** com psicólogo e fonoaudiólogo
+3. **Não espere** – a intervenção precoce muda trajetórias
+4. **Anote os comportamentos** para mostrar ao profissional
+
+## Teste M-CHAT
+
+O M-CHAT é um questionário de triagem aplicado entre 16 e 30 meses. Ele ajuda a identificar crianças com risco para TEA. Pergunte ao seu pediatra sobre ele.
+
+## Avaliação em Aracaju
+
+O Centro Multidisciplinar Tia Lidi no Grageru oferece avaliação completa para bebês e crianças com suspeita de autismo. Nossa equipe inclui psicóloga, fonoaudióloga e psicopedagoga especializadas.
+
+## Agende uma avaliação
+
+A intervenção antes dos 3 anos tem os melhores resultados. [Entre em contato pelo WhatsApp](https://api.whatsapp.com/send/?phone=5579933005359&text=Ol%C3%A1%21+Gostaria+de+agendar+uma+avalia%C3%A7%C3%A3o+para+autismo.&type=phone_number&app_absent=0).
+    `,
+    category: "Autismo",
+    publishedAt: "2025-03-22",
+    readTime: "7 min",
+    keywords: ["sinais autismo bebê", "autismo bebê aracaju", "sinais tea bebê", "autismo infantil sergipe", "diagnóstico precoce autismo"]
+  },
+  {
+    id: "15",
+    slug: "terapia-aba-autismo-aracaju",
+    title: "Terapia ABA para Autismo em Aracaju: O Que É e Como Funciona",
+    excerpt: "Entenda o que é a terapia ABA (Análise do Comportamento Aplicada) e como ela ajuda crianças autistas em Aracaju, Sergipe.",
+    content: `
+## O Que É a Terapia ABA?
+
+A ABA (Applied Behavior Analysis ou Análise do Comportamento Aplicada) é considerada a abordagem com maior evidência científica para o tratamento do autismo. Em Aracaju e Sergipe, cada vez mais famílias buscam esse tipo de intervenção.
+
+## Como funciona a ABA?
+
+A terapia ABA trabalha com:
+
+- **Reforço positivo** para ensinar novos comportamentos
+- **Análise funcional** do comportamento
+- **Objetivos individualizados** para cada criança
+- **Coleta de dados** para medir progresso
+- **Generalização** das habilidades aprendidas
+
+## Quais habilidades a ABA desenvolve?
+
+1. **Comunicação** verbal e não-verbal
+2. **Habilidades sociais** (brincar, compartilhar)
+3. **Autonomia** (ir ao banheiro, se vestir, comer)
+4. **Habilidades acadêmicas** (atenção, seguir instruções)
+5. **Redução de comportamentos** desafiadores
+
+## Quando começar a terapia ABA?
+
+Quanto mais cedo, melhor. Estudos mostram que crianças que iniciam ABA antes dos 4 anos têm ganhos significativamente maiores em:
+
+- Linguagem e comunicação
+- QI e habilidades cognitivas
+- Comportamento adaptativo
+- Socialização
+
+## Intensidade do tratamento
+
+A recomendação internacional é de 20 a 40 horas semanais, mas cada criança é avaliada individualmente. O plano terapêutico deve ser personalizado.
+
+## ABA e atendimento multidisciplinar
+
+A terapia ABA é ainda mais eficaz quando combinada com:
+
+- **Fonoaudiologia** para estimulação da fala
+- **Psicopedagogia** para suporte escolar
+- **Terapia ocupacional** para integração sensorial
+
+## Atendimento em Aracaju
+
+O Centro Multidisciplinar Tia Lidi no Grageru oferece abordagem comportamental integrada para crianças com TEA, atendendo famílias de Aracaju, Nossa Senhora do Socorro, Barra dos Coqueiros e toda região metropolitana.
+
+## Agende uma avaliação
+
+Descubra como a abordagem comportamental pode ajudar seu filho. [Fale conosco pelo WhatsApp](https://api.whatsapp.com/send/?phone=5579933005359&text=Ol%C3%A1%21+Gostaria+de+saber+mais+sobre+terapia+para+autismo.&type=phone_number&app_absent=0).
+    `,
+    category: "Autismo",
+    publishedAt: "2025-03-15",
+    readTime: "6 min",
+    keywords: ["terapia aba aracaju", "aba autismo sergipe", "análise do comportamento aplicada", "tratamento autismo aracaju"]
+  },
+  {
+    id: "14",
+    slug: "dificuldade-leitura-escrita-crianca-aracaju",
+    title: "Dificuldade de Leitura e Escrita em Crianças: Quando Buscar Ajuda em Aracaju",
+    excerpt: "Seu filho tem dificuldade para ler ou escrever? Saiba quando isso é normal e quando procurar um psicopedagogo em Aracaju.",
+    content: `
+## Dificuldade de Leitura e Escrita na Infância
+
+Muitas crianças em Aracaju apresentam dificuldades no processo de alfabetização. Entender quando isso é parte do desenvolvimento normal e quando é preciso buscar ajuda é fundamental.
+
+## Sinais de alerta por idade
+
+### 4 a 5 anos (Educação Infantil):
+- Não reconhece letras do próprio nome
+- Dificuldade para rimar palavras
+- Pouco interesse por livros e histórias
+
+### 6 a 7 anos (1º e 2º ano):
+- Não consegue associar letras a sons
+- Troca ou inverte letras frequentemente
+- Leitura muito lenta e silabada
+- Resistência para ler em voz alta
+
+### 8 a 10 anos (3º ao 5º ano):
+- Não lê com fluência para a idade
+- Dificuldade de interpretação de texto
+- Erros ortográficos persistentes
+- Evita atividades de leitura e escrita
+
+## Possíveis causas
+
+- **Dislexia**: transtorno específico de aprendizagem
+- **TDAH**: dificuldade de concentração afetando a leitura
+- **Deficiência visual ou auditiva** não diagnosticada
+- **Falta de estimulação** adequada em casa
+- **Método de alfabetização** inadequado
+
+## Como o psicopedagogo pode ajudar?
+
+O psicopedagogo realiza:
+
+1. **Avaliação diagnóstica** completa
+2. **Identificação** das causas da dificuldade
+3. **Plano de intervenção** individualizado
+4. **Atividades lúdicas** para estimular leitura e escrita
+5. **Orientação** para pais e escola
+
+## Dicas para estimular em casa
+
+- **Leia junto** com seu filho todos os dias
+- **Tenha livros** acessíveis pela casa
+- **Jogue** jogos de palavras e letras
+- **Evite pressionar** – elogie os progressos
+- **Limite o tempo de tela**
+
+## Atendimento Psicopedagógico em Aracaju
+
+No Centro Multidisciplinar Tia Lidi no Grageru, nossa psicopedagoga avalia e trata dificuldades de leitura e escrita com abordagem lúdica e eficaz. Atendemos crianças de toda Aracaju e região metropolitana.
+
+## Agende uma avaliação
+
+Não espere a dificuldade se agravar. [Agende pelo WhatsApp](https://api.whatsapp.com/send/?phone=5579933005359&text=Ol%C3%A1%21+Meu+filho+tem+dificuldade+de+leitura+e+escrita.&type=phone_number&app_absent=0).
+    `,
+    category: "Psicopedagogia",
+    publishedAt: "2025-03-08",
+    readTime: "6 min",
+    keywords: ["dificuldade leitura criança", "dificuldade escrita aracaju", "dislexia infantil sergipe", "psicopedagoga alfabetização aracaju"]
+  },
+  {
+    id: "13",
+    slug: "regulacao-emocional-criancas-aracaju",
+    title: "Regulação Emocional em Crianças: Como a Psicologia Infantil Pode Ajudar em Aracaju",
+    excerpt: "Seu filho tem birras frequentes ou não sabe lidar com frustração? Entenda como a regulação emocional se desenvolve e onde buscar ajuda em Aracaju.",
+    content: `
+## O Que É Regulação Emocional?
+
+Regulação emocional é a capacidade de reconhecer, entender e gerenciar as próprias emoções. Em crianças, essa habilidade está em desenvolvimento e muitas famílias em Aracaju buscam ajuda quando percebem dificuldades.
+
+## Sinais de dificuldade de regulação emocional
+
+- **Birras intensas e frequentes** além dos 4 anos
+- **Explosões de raiva** desproporcionais
+- **Choro incontrolável** em situações cotidianas
+- **Dificuldade em lidar com "não"**
+- **Agressividade** com colegas ou familiares
+- **Ansiedade** diante de mudanças na rotina
+
+## Por que algumas crianças têm mais dificuldade?
+
+- **Temperamento** natural da criança
+- **Modelos familiares** de expressão emocional
+- **Excesso de estímulos** e telas
+- **Transtornos do neurodesenvolvimento** (TEA, TDAH)
+- **Mudanças significativas** (separação, escola nova, irmão)
+
+## Como ajudar em casa
+
+1. **Nomeie as emoções**: "Eu vejo que você está com raiva porque..."
+2. **Valide o sentimento**: "Tudo bem sentir tristeza"
+3. **Ensine estratégias**: respiração profunda, contar até 10
+4. **Seja modelo**: mostre como você lida com frustrações
+5. **Mantenha rotina** previsível
+6. **Evite ceder** às birras por cansaço
+
+## Quando buscar ajuda profissional?
+
+Procure um psicólogo infantil em Aracaju quando:
+
+- As birras são muito frequentes e intensas
+- A criança se machuca ou machuca outros
+- Há prejuízo na vida escolar ou social
+- Os pais se sentem sem recursos
+- Os comportamentos persistem apesar das estratégias em casa
+
+## Psicologia Infantil em Aracaju
+
+No Centro Multidisciplinar Tia Lidi, nossa psicóloga utiliza técnicas especializadas para ajudar crianças a desenvolver regulação emocional, incluindo:
+
+- Terapia cognitivo-comportamental infantil
+- Treinamento de habilidades socioemocionais
+- Orientação parental
+- Atividades lúdicas terapêuticas
+
+## Agende uma consulta
+
+Ajude seu filho a lidar melhor com as emoções. [Fale conosco pelo WhatsApp](https://api.whatsapp.com/send/?phone=5579933005359&text=Ol%C3%A1%21+Gostaria+de+agendar+uma+consulta+de+psicologia+infantil.&type=phone_number&app_absent=0).
+    `,
+    category: "Psicologia",
+    publishedAt: "2025-03-01",
+    readTime: "6 min",
+    keywords: ["regulação emocional criança", "birra infantil aracaju", "psicólogo infantil aracaju", "criança agressiva sergipe", "terapia infantil aracaju"]
+  },
+  {
     id: "12",
     slug: "pedagoga-aracaju-papel-desenvolvimento-infantil",
     title: "Pedagoga em Aracaju: O Papel no Desenvolvimento Infantil",

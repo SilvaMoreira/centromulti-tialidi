@@ -160,12 +160,12 @@ const BlogPost = () => {
                     Agendar Consulta
                   </Link>
                   <a
-                    href="https://api.whatsapp.com/send/?phone=5579933005359&type=phone_number&app_absent=0"
+                    href="https://api.whatsapp.com/send/?phone=5579933005359&text=Ol%C3%A1%21+Gostaria+de+agendar+uma+consulta.&type=phone_number&app_absent=0"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center justify-center px-6 py-3 bg-green-500 text-white rounded-full font-semibold hover:bg-green-600 transition-colors"
                   >
-                    Falar no WhatsApp
+                    💬 Falar no WhatsApp
                   </a>
                 </div>
               </div>
